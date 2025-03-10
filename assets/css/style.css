@@ -701,9 +701,9 @@ p {
     padding: 60px 0;
     color: #fff;
     width: 100%;
-    min-height: 100vh; /* Ensures section height */
+    min-height: 100vh; /* Ensures section height  sd */
     z-index: 1; /* Keeps content above the background */
-    background: url('/assets/award/bg-award3.jpg') no-repeat center center fixed;
+    background: url('../award/bg-award3.jpg') no-repeat center center fixed;
 
     background-size: cover;
     background-attachment: fixed; /* Enables parallax effect */
