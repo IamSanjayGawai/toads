@@ -864,7 +864,7 @@ p {
 .cta-button {
     display: inline-block;
     padding: 15px 40px;
-    background: linear-gradient(90deg, #37bc4e,#b2f5d5);
+    background-color: #37bc4e;
     color: white;
     text-decoration: none;
     font-weight: 600;
@@ -924,7 +924,7 @@ p {
 }
 
 .client-logo {
-  max-width: 140px;
+  max-width: 200px;
   height: auto;
   transition: transform 0.3s ease, filter 0.3s ease;
   opacity: 0.9;
@@ -991,8 +991,8 @@ p {
 }
 
 .partner-logos img {
-    max-width: 160px;
-    height: 100px;
+    max-width: 260px;
+    height: 180px;
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
@@ -1107,7 +1107,18 @@ flex-direction: column;
 .footer-links a:hover {
     color: var(--white);
 }
+.footer-links a,
+.social-icons a {
+  text-decoration: none; /* Removes underline */
+}
 
+.social-icons a:hover {
+  color: #f0f0f0; /* Optional: Lightens color on hover */
+}
+
+
+
+/* scroll to top btn */
 #scrollToTopBtn {
   position: fixed;
   bottom: 20px;
