@@ -38,32 +38,99 @@
       
           
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top">
-    <!-- Brand Logo -->
-    <a class="navbar-brand" href="#">
-      <img src="assets/logo/logo.jpg" alt="Logo" class="logo" style="height: 60px;">
-    </a>
 
-    <!-- Toggle Button for Mobile -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<nav class="navbar navbar-expand-lg fixed-top ">
+  <!-- Brand Logo -->
+  <a class="navbar-brand" href="#">
+    <img src="assets/logo/logo.jpg" alt="Logo" class="logo" style="height: 60px;">
+  </a>
 
-    <!-- Navbar Links -->
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link text-light" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link text-light" href="#our-works">Our Works</a></li>
-        <li class="nav-item"><a class="nav-link text-light" href="#awards">Awards</a></li>
-        <li class="nav-item"><a class="nav-link text-light" href="#our-course">Our Course</a></li>
-        <li class="nav-item"><a class="nav-link text-light" href="#partners">Partners</a></li>
-        <li class="nav-item"><a class="nav-link text-light" href="#about-us">About Us</a></li>
-        <li class="nav-item"><a class="nav-link text-light" href="#why-toads">Why Toads</a></li>
-        <li class="nav-item"><a class="nav-link text-light" href="#contact">Contact Us</a></li>
-      </ul>
-    </div>
+  <!-- Toggle Button for Mobile -->
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar Links -->
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link text-light" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link text-light" href="#our-works">Our Works</a></li>
+      <li class="nav-item"><a class="nav-link text-light" href="#awards">Awards</a></li>
+
+      <!-- Courses Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Our Courses
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+          <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">Degree</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">
+                B.voc in Graphics and Animation</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">Animation</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Animation Prime</a></li>
+              <li><a class="dropdown-item" href="#">Animation Elite</a></li>
+              <li><a class="dropdown-item" href="#">Animation Gold</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">VFX</a>
+            <ul class="dropdown-menu">
+
+
+              <li><a class="dropdown-item" href="#">    VFX Prime</a></li>
+              <li><a class="dropdown-item" href="#">          
+                VFX Elite</a></li>
+                <li><a class="dropdown-item" href="#">          
+                  VFX Gold</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">Graphics Design</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">UI/UX Prime
+              </a></li>
+              <li><a class="dropdown-item" href="#">Illustrator</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">Gaming Course</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Motion Graphics Prime</a></li>
+              
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">Short Term Course</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">VFX Pro</a></li>
+              <li><a class="dropdown-item" href="#">Graphics Design Pro</a></li>
+              <li><a class="dropdown-item" href="#">Editing Pro</a></li>
+              <li><a class="dropdown-item" href="#">2d Animation pro</a></li>
+              <li><a class="dropdown-item" href="#">Ai Pro</a></li>
+              <li><a class="dropdown-item" href="#">Animation Pro</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </li>
+
+      <li class="nav-item"><a class="nav-link text-light" href="#partners">Partners</a></li>
+      <li class="nav-item"><a class="nav-link text-light" href="#about-us">About Us</a></li>
+      <li class="nav-item"><a class="nav-link text-light" href="#why-toads">Why Toads</a></li>
+      <li class="nav-item"><a class="nav-link text-light" href="#contact">Contact Us</a></li>
+    </ul>
+  </div>
 </nav>
+
+
+
 
    <!-- Hero Section -->
    <div class="hero-section">
@@ -279,6 +346,34 @@
             </div>
           </div>
         </div>
+
+
+        <!-- affilate partners -->
+<div class="partner-section mb-5" id="partners">
+  <div class="partner-text">
+    <p class="partner-tagline">TEAM. CUSTOMER. COMMUNITY</p>
+    <h2 class="heading-2">We Work With the Best Partners</h2>
+    <p class="partner-description">
+      While we are at the forefront of and specialize in design-build, we are very familiar with a number of delivery methods and are confident we can find the process that will best help you meet your goals.
+    </p>
+    <button class="custom-button">READ MORE</button>
+  </div>
+
+  <div class="partner-logos">
+    <img src="assets/brand/01.png" alt="Classic Design Studio">
+    <img src="assets/brand/05.png" alt="Design Studio">
+    <img src="assets/brand/06.jpg" alt="Vintage Studio">
+    <img src="assets/brand/03.jpeg" alt="Your Coach">
+    <img src="assets/brand/02.png" alt="Hello Sunshine">
+    <img src="assets/brand/04.png" alt="Unlimited Outdoor Adventures">
+  </div>
+</div>
+
+
+
+
+<!--  -->
+
         
 
 <!-- our Courses  -->
@@ -347,31 +442,6 @@
   <!-- our work:Close  -->
   
 
-<!-- affilate partners -->
-<div class="partner-section mb-5" id="partners">
-  <div class="partner-text">
-    <p class="partner-tagline">TEAM. CUSTOMER. COMMUNITY</p>
-    <h2 class="heading-2">We Work With the Best Partners</h2>
-    <p class="partner-description">
-      While we are at the forefront of and specialize in design-build, we are very familiar with a number of delivery methods and are confident we can find the process that will best help you meet your goals.
-    </p>
-    <button class="custom-button">READ MORE</button>
-  </div>
-
-  <div class="partner-logos">
-    <img src="assets/brand/01.png" alt="Classic Design Studio">
-    <img src="assets/brand/05.png" alt="Design Studio">
-    <img src="assets/brand/06.jpg" alt="Vintage Studio">
-    <img src="assets/brand/03.jpeg" alt="Your Coach">
-    <img src="assets/brand/02.png" alt="Hello Sunshine">
-    <img src="assets/brand/04.png" alt="Unlimited Outdoor Adventures">
-  </div>
-</div>
-
-
-
-
-<!--  -->
 
 
       <!-- about -->
@@ -571,41 +641,41 @@
     </div>
 
     <!-- Client Logos Grid -->
-    <div class="row justify-content-center ali clients-grid p-4">
-      <div class="col-6 col-sm-12 col-md-3 col-lg-2 text-center">
+    <div class="row justify-content-center ali clients-grid  d-flex gap-5">
+      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
         <img src="assets/trusted-clients/altbalaji.png" alt="AltBalaji" class="client-logo">
       </div>
-      <div class="col-6 col-sm-12 col-md-3 col-lg-2 text-center">
+      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
         <img src="assets/trusted-clients/andtv.png" alt="AndTV" class="client-logo">
       </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
         <img src="assets/trusted-clients/disneyhoster.png" alt="DisneyHoster" class="client-logo">
       </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
         <img src="assets/trusted-clients/icici.png" alt="ICICI" class="client-logo">
       </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
         <img src="assets/trusted-clients/sonyliv.png" alt="SonyLiv" class="client-logo">
       </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
         <img src="assets/trusted-clients/shamaroo.png" alt="Shamaroo" class="client-logo">
       </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
         <img src="assets/trusted-clients/starplus.png" alt="Star Plus" class="client-logo">
       </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
         <img src="assets/trusted-clients/voot.png" alt="Voot" class="client-logo">
       </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
         <img src="assets/trusted-clients/zee5.png" alt="Zee5" class="client-logo">
       </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
         <img src="assets/trusted-clients/zeetv.png" alt="Zee TV" class="client-logo">
       </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
         <img src="assets/trusted-clients/starbharat.png" alt="Star Bharat" class="client-logo">
       </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
         <img src="assets/trusted-clients/swaminarayana.png" alt="Swaminarayana" class="client-logo">
       </div>
     </div>
@@ -663,6 +733,19 @@
   </div>
 </div>
 
+
+
+ <!-- Map Container -->
+<!-- Google Maps Embed -->
+<div class="container-fluid mb-5 map-section py-5" id="map">
+  <h2 class="heading-2 text-accent">Our Location</h2>
+  <p class="fs-5 mb-4 text-accent">Our experienced staff, combined with our global network, allow us to provide the
+    support you need</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121037.3702032496!2d73.65675709726561!3d18.555192699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf656b67eba9%3A0xef462a0b2a21b02d!2sTOADS%20ACADEMY!5e0!3m2!1sen!2sin!4v1741639071767!5m2!1sen!2sin" 
+width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<!-- amp address -->
 
         <!-- footer  -->
 <footer class="container-fluid footer">

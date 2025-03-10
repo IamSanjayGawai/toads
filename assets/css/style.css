@@ -203,6 +203,23 @@ p {
     background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
 
+  /* Enable dropdown submenus */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-top: -1px;
+    display: none;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
 
   /* Hero Section */
   .hero-section {
@@ -721,7 +738,6 @@ p {
   background-size: cover;
   opacity: 0.1; /* Adjust opacity here */
   z-index: -1; /* Keeps background behind content */
-  background: url('/assets/award/bg-award3.jpg') no-repeat center center fixed;
 }
 
 
@@ -910,33 +926,34 @@ p {
 
 /* Trusted Clients Section */
 .partner {
-  background: linear-gradient(135deg, #bbbbbb, #ecdc4b); 
-  border-radius: 12px;
-  padding: 60px 0;
-}
+    background: linear-gradient(135deg, #bbbbbb, #ecdc4b); 
+    border-radius: 12px;
+    padding: 60px 0;
+  }
+  
+  /* Client Logos Grid */
 
-/* Client Logos */
-.clients-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.client-logo {
-  max-width: 150px;
-  height: auto;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  opacity: 0.9;
-}
-
-.client-logo:hover {
-  transform: scale(1.1);
-  filter: grayscale(0%);
-  opacity: 1;
-}
-
+  
+  /* Client Logos */
+  .client-logo {
+    width: 200px; /* Ensures all logos have the same width */
+    height: 200px; /* Set a fixed height for consistency */
+    object-fit: contain; /* Keeps the aspect ratio intact */
+    padding: 10px;
+    background: #fff; /* White background for a clean look */
+    border-radius: 8px; /* Smooth edges */
+    border: 1px solid #ddd; /* Subtle border */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Professional look */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0.9;
+  }
+  
+  /* Hover Effect */
+  .client-logo:hover {
+    opacity: 1;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
+  }
+  
 
 /* Partner Section */
 .partner-section {
@@ -985,11 +1002,26 @@ p {
 
 .partner-logos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(3, 1fr); /* Adjust grid layout */
+    gap: 20px;
     justify-items: center;
-    width: 70%;
+    width: 50%;
 }
+.partner-logos img {
+    width: 200px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: contain; /* Ensures the image scales properly */
+    border: 1px solid #ddd; /* Optional: Add a subtle border */
+    padding: 5px;
+    background: #fff; /* Keeps consistency */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Professional touch */
+    transition: transform 0.3s ease-in-out;
+}
+
+.partner-logos img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
 @media screen and (max-width: 768px) {
     .partner-logos {
         grid-template-columns: repeat(1, 1fr);
@@ -1082,6 +1114,20 @@ flex-direction: column;
     top: 100px;
     animation: upAndDown 3s ease-in-out infinite;
 }
+
+/* map */
+.map-section {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*  */
+
+
 
 /* Footer */
 .footer {
