@@ -212,10 +212,10 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     text-align: center;
     color: white;
-
+    padding: 25px;
     overflow: hidden;
   }
   
@@ -245,10 +245,14 @@ p {
   .content {
     position: relative;
     z-index: 1; /* Ensures content stays above the video */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .content h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 8px;
@@ -277,6 +281,7 @@ p {
     text-transform: uppercase;
     border-radius: 5px;
     transition: 0.3s;
+
   }
   
   .custom-button:hover {
@@ -286,7 +291,7 @@ p {
   .form-container {
     position: fixed;
     top: 0;
-    left: -400px; /* Initially hidden */
+    right: -400px; /* Initially hidden */
     width: 350px;
     height: 100vh;
     background: white;
@@ -298,7 +303,7 @@ p {
 
 /* Show Form */
 .form-container.show {
-    left: 0;
+    right: 0;
 }
 
 /* Close Button */
@@ -466,7 +471,7 @@ p {
     position: absolute;
     top: -100px;
     height: 600px;
-    width: 350px;
+    width: 100%;
     animation: upAndDown 3s ease-in-out infinite;
 }
 
@@ -698,7 +703,7 @@ p {
     width: 100%;
     min-height: 100vh; /* Ensures section height */
     z-index: 1; /* Keeps content above the background */
-    background: url('/assets/award/bg-award3.jpg') no-repeat center center fixed;
+    background: url('assets/award/bg-award3.jpg') no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed; /* Enables parallax effect */
     background-color:  rgba(0, 0, 0, 0.1);
@@ -1133,7 +1138,9 @@ flex-direction: column;
     
     .custom-button {
         width: 25%;
+        font-size: 14px;
     }
+
     
     .model img {
         position: absolute;
