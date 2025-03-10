@@ -721,6 +721,7 @@ p {
   background-size: cover;
   opacity: 0.1; /* Adjust opacity here */
   z-index: -1; /* Keeps background behind content */
+  background: url('/assets/award/bg-award3.jpg') no-repeat center center fixed;
 }
 
 
