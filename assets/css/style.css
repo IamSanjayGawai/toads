@@ -997,8 +997,8 @@ p {
 }
 
 .partner-logos img {
-    max-width: 260px;
-    max-height: 180px;
+    max-width: 200px;
+    max-height: auto;
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
