@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+    <title>Home page</title>
+  </head>
+
+  <body class="body-background">
+
+        <!-- header nav closed -->
+        <div class="wrapper container-fluid"> 
+      
+          
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <!-- Brand Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="assets/logo/logo.jpg" alt="Logo" class="logo" style="height: 40px;">
+    </a>
+
+    <!-- Toggle Button for Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-light" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#our-works">Our Works</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#awards">Awards</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#our-course">Our Course</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#partners">Partners</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#about-us">About Us</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#why-toads">Why Toads</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+</nav>
+
+   <!-- Hero Section -->
+   <div class="hero-section">
+    <!-- Background Video -->
+    <video autoplay muted loop class="background-video">
+        <source src="https://www.toadsindia.com/front/images/website%20video.mp4" type="video/mp4">
+    </video>
+
+    <!-- Overlay -->
+    <div class="video-overlay"></div>
+
+    <!-- Content -->
+    <div class="content">
+        <h1>TOADS India</h1>
+        <p>Animation and VFX Studios</p>
+        <button class="custom-button apply-btn">Apply Now</button>
+    </div>
+</div>
+
+<!-- Sliding Form -->
+<div class="form-container" id="applyForm">
+    <button class="close-btn text-success" onclick="toggleForm()">×</button>
+    <h2 class="heading-2">Apply Now</h2>
+    <form>
+        <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Enter your email">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Phone</label>
+            <input type="tel" class="form-control" placeholder="Enter your phone">
+        </div>
+        <button type="submit" class="btn btn-success w-100">Submit</button>
+    </form>
+</div>
+
+      <!-- Hero Section close -->
+       
+    <!-- Counter Section -->
+    <!-- <div class="container mb-5 counter-section border w-100">
+      <div class="row text-center d-flex justify-content-center align-items-center p-2">
+        <div class="col-6 col-md-3 stat  d-flex justify-content-center align-items-center flex-column border">
+          <div>
+            <span class="number text-accent" data-target="1.2">0</span>
+            <span class="plus text-accent">+</span>
+            <div class="description">Year of Experience</div>
+          </div>
+          
+        </div>
+        <div class="col-6 col-md-3 stat d-flex justify-content-center align-items-center flex-column border">
+          <div>
+            <span class="number text-accent" data-target="10">0</span>
+            <span class="plus text-accent">+</span>
+            <div class="description">Projects Done</div>
+          </div>
+       
+        </div>
+        <div class="col-6 col-md-3 stat d-flex justify-content-center align-items-center flex-column border">
+          <div>
+            <span class="number text-accent" data-target="75">0</span>
+            <span class="plus text-accent">+</span>
+            <div class="description">Bugs Solved</div>
+          </div>
+          
+        </div>
+        <div class="col-6 col-md-3 stat d-flex justify-content-center align-items-center flex-column border">
+          <div>
+            <span class="number text-accent" data-target="1000">0</span>
+            <span class="plus text-accent">+</span>
+            <div class="description">Linkedin Connections</div>
+          </div>
+          
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Counter Section closed -->
+
+  <!-- Our work -->
+  <div class="work-section mb-5 mt-5 px-5" id="our-works">
+    <div class="work-up text-center mb-4">
+      <h2 class="heading-2 text-accent">Our Works</h2>
+    </div>
+  
+    <!-- Swiper Slider -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/work/Badi heroine banti hai.jpg" class="poster-img-top" alt="Movie 1">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/work/Chandra Dev.jpg" class="poster-img-top" alt="Movie 2">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/work/Dharavi Bank.jpg" class="poster-img-top" alt="Movie 3">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/work/Dil Logical.jpg" class="poster-img-top" alt="Movie 4">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/work/Ek Farzi Love Story.jpg" class="poster-img-top" alt="Movie 5">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/work/Half Love Half Arranged.jpg" class="poster-img-top" alt="Movie 6">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/work/Hunter.jpg" class="poster-img-top" alt="Movie 7">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/work/Industry.jpg" class="poster-img-top" alt="Movie 8">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/work/Namacool.jpg" class="poster-img-top" alt="Movie 9">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/work/Power of Paanch.jpg" class="poster-img-top" alt="Movie 10">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/work/Trial.jpg" class="poster-img-top" alt="Movie 11">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/work/Zara Hatke Zara Bachke.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Pagination & Navigation -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+  
+
+    <!-- our work closed -->
+
+      
+        <!-- Award Section start -->
+
+        <div class=" text-center py-5 mb-5 award-background" id="awards">
+          <h2 class="text-warning font-weight-bold mb-2 text-accent">
+            Multi Award Winner Studio's Academy
+          </h2>
+          <p class="mb-5 text-accent fs-6">
+
+          </p>
+          <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+              <div class="award-image">
+                <img src="assets/award/awardlogo.webp" alt="Award trophy" class="img-fluid">
+                <i class="fas fa-play-circle text-white fa-3x"></i>
+              </div>
+            </div>
+            <div class="col-md-8 d-flex justify-content-center align-items-center">
+              <div class="row awards-list-img ">
+                <div class="col-md-12 mb-4 d-flex flex-column justify-content-center align-items-center">
+                  <img src="assets/award/award1.webp" alt="Best Visual Effects NAZAR" class="img-fluid mb-2">
+                  <span class=" text-accent fs-6">
+                    Best Visual Effects PISHACHINI
+                  </span>
+                  <span class="text-accent fs-6">
+                    The 23rd ITA Awards 2023
+                  </span>
+                </div>
+                <div class="col-md-6 mb-4 d-flex flex-column justify-content-center align-items-center">
+                  <img src="assets/award/award1.webp" alt="Best Visual Effects NAZAR" class="img-fluid mb-2">
+                  <span class=" text-accent fs-6">
+                    Best Visual Effects PISHACHINI
+                  </span>
+                  <span class="text-accent fs-6">
+                    The 23rd ITA Awards 2023
+                  </span>
+                </div>
+                <div class="col-md-6 mb-4 d-flex flex-column justify-content-center align-items-center">
+                  <img src="assets/award/award1.webp" alt="Best Visual Effects NAZAR" class="img-fluid mb-2">
+                  <span class=" text-accent fs-6">
+                    Best Visual Effects PISHACHINI
+                  </span>
+                  <span class="text-accent fs-6">
+                    The 23rd ITA Awards 2023
+                  </span>
+              
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+<!-- our Courses  -->
+<div class="container-fluid courses-section ">  
+<div class="container py-5 text-center ">
+  <h1 class="heading-2 mb-5 text-accent">Our Top Notch Courses</h1>
+  <div class="row justify-content-center">
+      
+      <div class="col-md-4 mb-4">
+          <div class="course-card" style="background-image: url('https://storage.googleapis.com/a1aa/image/fizlcjAL495CIAX8BHNZuLbmF1yNKpzQcoZnFuSQq5M.jpg');">
+              <div class="course-content">
+                  <h4>Degree</h4>
+                  <button class="course-button">Read More</button>
+              </div>
+          </div>   
+      </div>
+
+      <div class="col-md-4 mb-4">
+          <div class="course-card" style="background-image: url('https://storage.googleapis.com/a1aa/image/AsHKlyYVdD8B99V_BAvNSqGgduJJvD8MTj9SFjy9SAw.jpg');">
+              <div class="course-content">
+                  <h4>Animation</h4>
+                  <button class="course-button">Read More</button>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+          <div class="course-card" style="background-image: url('https://storage.googleapis.com/a1aa/image/3yBhpb5aAH64IjvQwJrvpanuiDpfm9LBDM8qR4jboB4.jpg');">
+              <div class="course-content">
+                  <h4>VFX</h4>
+                  <button class="course-button">Read More</button>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+          <div class="course-card" style="background-image: url('https://storage.googleapis.com/a1aa/image/CHbC_S3TqhG3SVskig_p3epQqlZY5qQlU-c3RBbIfms.jpg');">
+              <div class="course-content">
+                  <h4>Graphics Design</h4>
+                  <button class="course-button">Read More</button>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+          <div class="course-card" style="background-image: url('https://storage.googleapis.com/a1aa/image/N-blw-ZdtENUfegWUnNLrZtO6vVTuwxyPTtJYkhVCpM.jpg');">
+              <div class="course-content">
+                  <h4>Gaming Course</h4>
+                  <button class="course-button">Read More</button>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+          <div class="course-card" style="background-image: url('https://storage.googleapis.com/a1aa/image/115B9Fo1ltyMO5qeDtvrI0JszVM17Pzjh_qF2s6Xu9A.jpg');">
+              <div class="course-content">
+                  <h4>Short Term Courses</h4>
+                  <button class="course-button">Read More</button>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</div>
+</div>
+  <!-- our work:Close  -->
+  
+
+<!-- affilate partners -->
+<div class="partner-section mb-5" id="partners">
+  <div class="partner-text">
+    <p class="partner-tagline">TEAM. CUSTOMER. COMMUNITY</p>
+    <h2 class="heading-2">We Work With the Best Partners</h2>
+    <p class="partner-description">
+      While we are at the forefront of and specialize in design-build, we are very familiar with a number of delivery methods and are confident we can find the process that will best help you meet your goals.
+    </p>
+    <button class="custom-button">READ MORE</button>
+  </div>
+
+  <div class="partner-logos">
+    <img src="assets/brand/01.png" alt="Classic Design Studio">
+    <img src="assets/brand/02.png" alt="Hello Sunshine">
+    <img src="assets/brand/03.jpeg" alt="Your Coach">
+    <img src="assets/brand/04.png" alt="Unlimited Outdoor Adventures">
+    <img src="assets/brand/05.png" alt="Design Studio">
+    <img src="assets/brand/06.jpg" alt="Vintage Studio">
+  </div>
+</div>
+
+
+
+
+<!--  -->
+
+
+      <!-- about -->
+      <div class="container-fluid mb-5 our-features" id="about-us">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-md-8">
+              <h2 class="heading-2 text-white">About Us</h2>
+              <p class="text-white  heading-3 mb-5">
+                Unlocking Potential Through Quality Education
+              </p>
+            </div>
+            <div class="col-md-4">
+              <!-- <div class="fire">
+                                        <img src="assets/img/fire.png" alt="" class="img-fluid">
+                                    </div>
+         -->
+              <div class="model">
+                <img src="assets/img/model1.png" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="features-card mb-4 mb-md-0">
+                <div class="features-card-body p-4">
+                  <p class="sr mb-5  heading-2 text-light">01.</p>
+                  <h4 class="card-title te">About Toads Academy</h4>
+                  <p class="card-text">
+                    <li>
+                      Welcome to Toads Academy, the ultimate destination for aspiring artists in Animation, VFX, and Game Development. As the educational division of Flying Toads, India’s leading VFX studio, we bring over 20 years of industry expertise to nurture the next generation of creative minds.
+                    </li>
+                   
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="features-card mb-4 mb-md-0">
+                <div class="features-card-body p-4">
+                  <p class="sr mb-5 heading-2 text-light">02.</p>
+                  <h4 class="card-title">Industry-Driven Learning</h4>
+                  <ul class="card-text">
+                    <li>
+                      At Toads Academy, we emphasize hands-on learning, mentored by industry veterans who combine cutting-edge technology with creative excellence. Our programs are designed to help students master the skills needed to thrive in the rapidly evolving entertainment and media industry.
+                    </li>
+                  
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="features-card mb-4 mb-md-0">
+                <div class="features-card-body p-4">
+                  <p class="sr mb-5 heading-2 text-light">03.</p>
+                  <h4 class="card-title">Comprehensive Curriculum</h4>
+                  <ul class="card-text">
+                    <li>
+                      With a strong focus on Animation, VFX, Gaming, and AI integration, our well-rounded courses empower students to push creative boundaries and harness technical innovation. We prepare them for dynamic careers by equipping them with the skills to excel in this competitive field.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- about :close -->
+
+      <!-- why toads start -->
+      <section class="why-join-section" id="why-toads">
+        <div class="container">
+        <div class="section-header">
+          <h2 class="heading-2 text-accent">Why Toads</h2>
+          <p class="text-accent">Discover how our industry-backed program transforms aspiring talents into sought-after professionals</p>
+        </div>
+        
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="icon-container">
+              <i class="fas fa-shield-alt">1</i>
+            </div>
+            <h3 class="benefit-title">Guaranteed Internship to Job Path</h3>
+            <p class="benefit-description">Begin with an industry-backed internship that leads directly to full-time career opportunities with our partner studios.</p>
+          </div>
+          
+          <div class="benefit-card">
+            <div class="icon-container">
+              <i class="fas fa-microchip">2</i>
+            </div>
+            <h3 class="benefit-title">Master Emerging Technologies</h3>
+            <p class="benefit-description">Stay ahead of the curve with hands-on training in cutting-edge tools and industry-leading software and techniques.</p>
+          </div>
+          
+          <div class="benefit-card">
+            <div class="icon-container">
+              <i class="fas fa-building">3</i>
+            </div>
+            <h3 class="benefit-title">Studio Environment Learning</h3>
+            <p class="benefit-description">Train in a professional production setup that mirrors real-world studios, preparing you for immediate industry integration.</p>
+          </div>
+          
+          <div class="benefit-card">
+            <div class="icon-container">
+              <i class="fas fa-robot">4</i>
+            </div>
+            <h3 class="benefit-title">AI-Integrated Curriculum</h3>
+            <p class="benefit-description">Leverage AI-powered tools that enhance your creative workflow and accelerate your learning process.</p>
+          </div>
+          
+          <div class="benefit-card">
+            <div class="icon-container">
+              <i class="fas fa-project-diagram">5</i>
+            </div>
+            <h3 class="benefit-title">Live Project Experience</h3>
+            <p class="benefit-description">Work on actual industry projects to build an impressive portfolio that demonstrates real production experience.</p>
+          </div>
+          
+          <div class="benefit-card">
+            <div class="icon-container">
+              <i class="fas fa-palette">6</i>
+            </div>
+            <h3 class="benefit-title">Industry Professional Training</h3>
+            <p class="benefit-description">Learn directly from active studio artists who bring current industry practices and insights to your education.</p>
+          </div>
+          
+          <div class="benefit-card">
+            <div class="icon-container">
+              <i class="fas fa-handshake">7</i>
+            </div>
+            <h3 class="benefit-title">Complete Placement Support</h3>
+            <p class="benefit-description">Receive comprehensive career guidance, interview preparation, and direct connections to hiring studios.</p>
+          </div>
+          
+          <div class="benefit-card">
+            <div class="icon-container">
+              <i class="fas fa-globe">8</i>
+            </div>
+            <h3 class="benefit-title">Global Career Opportunities</h3>
+            <p class="benefit-description">Access employment possibilities across India and international markets through our global studio network.</p>
+          </div>
+          
+          <div class="benefit-card">
+            <div class="icon-container">
+              <i class="fas fa-comments">9</i>
+            </div>
+            <h3 class="benefit-title">Global Studio Network</h3>
+            <p class="benefit-description">Connect with leading production houses and industry experts through our extensive professional network.</p>
+          </div>
+          
+          <div class="benefit-card">
+            <div class="icon-container">
+              <i class="fas fa-award">10</i>
+            </div>
+            <h3 class="benefit-title">MESC Certification</h3>
+            <p class="benefit-description">Earn industry-recognized credentials from the Media & Entertainment Skills Council that validate your expertise.</p>
+          </div>
+          
+          <div class="benefit-card">
+            <div class="icon-container">
+              <i class="fas fa-book">11</i>
+            </div>
+            <h3 class="benefit-title">Industry-Crafted Curriculum</h3>
+            <p class="benefit-description">Follow a comprehensive syllabus designed by active professionals to ensure job-ready skills development.</p>
+          </div>
+          
+          <div class="benefit-card">
+            <div class="icon-container">
+              <i class="fas fa-map-marker-alt">12</i>
+            </div>
+            <h3 class="benefit-title">Studio Visits & Industry Exposure</h3>
+            <p class="benefit-description">Gain firsthand experience of professional workflows through exclusive visits to operational production studios.</p>
+          </div>
+        </div>
+        
+        <div class="cta-container">
+          <a href="#enroll" class="cta-button">Start Your Career Journey</a>
+        </div>
+      </div>
+      </section>
+      
+
+      <!-- why toads ends -->
+      <!-- trusted clients -->
+ <!-- Trusted Clients Section -->
+<div class="container-fluid partner py-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col">
+        <h2 class="heading-2 mb-3 text-accent text-dark">Our Valued Clients</h2>
+        <p class="text-light mb-4 text-dark">
+          We take pride in partnering with leading brands across industries.
+        </p>
+      </div>
+    </div>
+
+    <!-- Client Logos Grid -->
+    <div class="row justify-content-center clients-grid p-4">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+        <img src="assets/trusted-clients/altbalaji.png" alt="AltBalaji" class="client-logo">
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+        <img src="assets/trusted-clients/andtv.png" alt="AndTV" class="client-logo">
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+        <img src="assets/trusted-clients/disneyhoster.png" alt="DisneyHoster" class="client-logo">
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+        <img src="assets/trusted-clients/icici.png" alt="ICICI" class="client-logo">
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+        <img src="assets/trusted-clients/sonyliv.png" alt="SonyLiv" class="client-logo">
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+        <img src="assets/trusted-clients/shamaroo.png" alt="Shamaroo" class="client-logo">
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+        <img src="assets/trusted-clients/starbharat.png" alt="Star Bharat" class="client-logo">
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+        <img src="assets/trusted-clients/starplus.png" alt="Star Plus" class="client-logo">
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+        <img src="assets/trusted-clients/swaminarayana.png" alt="Swaminarayana" class="client-logo">
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+        <img src="assets/trusted-clients/voot.png" alt="Voot" class="client-logo">
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+        <img src="assets/trusted-clients/zee5.png" alt="Zee5" class="client-logo">
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+        <img src="assets/trusted-clients/zeetv.png" alt="Zee TV" class="client-logo">
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+        <!-- Contact Form Section -->
+<div class="container-fluid mb-5 contact-section py-5" id="contact">
+  <div class="container">
+    <div class="row">
+      <!-- Left Side with Images -->
+      <div class="col-md-6">
+        <h2 class="heading-2 text-light">Let's talk</h2>
+        <div class="position-relative w-100">
+          <img src="assets/img/h1_img-9.png" alt="" class="position-absolute model" />
+          <img src="assets/img/h1_img-7.png" alt="" class="position-absolute sticker" />
+        </div>
+      </div>
+
+      <!-- Right Side with Form -->
+      <div class="col-md-6">
+        <div class="card border-0">
+          <div class="card-body p-5">
+            <p class="fs-5 mb-4">Let's talk about your career growth</p>
+            <form id="contactForm">
+              <div class="row">
+                <div class="col-md-6 form-sect">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" class="form-control" required />
+                </div>
+                <div class="col-md-6 form-sect">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" class="form-control" required />
+                </div>
+                <div class="col-md-12 form-sect">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" class="form-control" required />
+                </div>
+                <div class="col-md-12 form-sect">
+                  <label for="phone">Mobile Number</label>
+                  <input type="tel" id="phone" class="form-control" required />
+                </div>
+                <div class="col-md-12">
+                  <button type="submit" class="custom-button">Submit</button>
+                </div>
+              </div>
+            </form>
+            <p id="statusMessage" class="mt-3"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <!-- footer  -->
+        <footer class="container-fluid footer">
+          <div class="container p-5">
+            <div class="row">
+              <div class="col-md-6">
+                <a class="footer-logo" href="#">
+                  <img src="assets/logo/logo.jpg" alt="" class="img-fluid" />
+                </a>
+                <p class="fs-6 text-white">
+                  Toads Academy, 101-107, First Floor, Kamla Arcade, Opp. Bal Gandharv Rang Mandir, Jangali Maharaj Road, Pune -411004
+                </p>
+                <p class="contact-info text-white fs-6">
+                  <i class="bi bi-phone"></i> (+91) 8005400006 | (+91) 9145757500
+                  <br />
+                  <i class="bi bi-envelope"></i> toadsacademy@gmail.com
+                </p>
+              </div>
+        
+              <div class="col-md-2">
+                <h5 class="text-accent fs-5 mb-2 link-title">Quick Links</h5>
+                <ul class="footer-links d-flex flex-column gap-1">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#our-works">Our Works</a></li>
+                  <li><a href="#awards">Awards</a></li>
+                  <li><a href="#our-course">Our Course</a></li>
+                  <li><a href="#partners">Partners</a></li>
+                  <li><a href="#about-us">About Us</a></li>
+                  <li><a href="#why-toads">Why Toads</a></li>
+                  <li><a href="#contact">Contact Us</a></li>
+                </ul>
+              </div>
+        
+              <div class="col-md-2">
+                <h5 class="text-accent fs-5 mb-2 link-title">Courses</h5>
+                <ul class="footer-links d-flex flex-column gap-1">
+                  <li><a href="#">Course 1</a></li>
+                  <li><a href="#">Course 2</a></li>
+                  <li><a href="#">Course 3</a></li>
+                </ul>
+              </div>
+        
+              <div class="col-md-2">
+                <h5 class="text-accent fs-5 mb-2 link-title">More Links</h5>
+                <ul class="footer-links d-flex flex-column gap-1">
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">FAQs</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        
+      
+        </footer>
+            <!-- Scroll-to-Top Button -->
+            <button id="scrollToTopBtn" onclick="scrollToTop()">
+              <i class="bi bi-rocket-takeoff-fill"></i>
+            </button>
+          
+        
+        <!-- footer :Close -->
+
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- our worl slider js swiper -->
+ <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- JavaScript for Counter Animation -->
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll(".number");
+            const speed = 100; // Adjust speed of counting
+
+            const animateCount = (counter) => {
+              const updateCount = () => {
+                const target = +counter.getAttribute("data-target");
+                const count = +counter.innerText;
+                const increment = target / speed;
+
+                if (count < target) {
+                  counter.innerText = Math.ceil(count + increment);
+                  setTimeout(updateCount, 25);
+                } else {
+                  counter.innerText = target; // Set to exact target value
+                }
+              };
+              updateCount();
+            };
+
+            // Intersection Observer to start animation when visible
+            const observer = new IntersectionObserver(
+              (entries, observer) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                    animateCount(entry.target);
+                    observer.unobserve(entry.target); // Stop observing once animated
+                  }
+                });
+              },
+              { threshold: 0.5 } // Trigger when 50% is visible
+            );
+
+            counters.forEach((counter) => observer.observe(counter));
+          });
+
+          // Award images
+          document.addEventListener("DOMContentLoaded", function () {
+            const rows = document.querySelectorAll(".table tbody tr");
+            const defaultImage = document.getElementById("award-2018");
+            const awardImages = document.querySelectorAll(".award-img");
+
+            rows.forEach((row) => {
+              row.addEventListener("mouseenter", function () {
+                const awardId = this.getAttribute("data-award");
+
+                // Hide all images
+                awardImages.forEach((img) => img.classList.add("d-none"));
+
+                // Show the correct award image
+                const hoverImage = document.getElementById(awardId);
+                if (hoverImage) {
+                  hoverImage.classList.remove("d-none");
+                }
+              });
+
+              row.addEventListener("mouseleave", function () {
+                // Hide all award images
+                awardImages.forEach((img) => img.classList.add("d-none"));
+
+                // Show the default image again
+                defaultImage.classList.remove("d-none");
+              });
+            });
+          });
+
+          document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+        duration: 1000,  // Animation duration
+        easing: "ease-in-out",  // Smooth effect
+        once: true,  // Ensures animation happens on every scroll
+        mirror: true   // Allows animation to replay when scrolling up
+    });
+});
+
+
+
+// navbar scroll effect
+window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    const firstSection = document.querySelector(".home-section") || document.querySelector("video"); 
+    const firstSectionHeight = firstSection ? firstSection.offsetHeight : 0;
+    
+    if (window.scrollY < firstSectionHeight) {
+        navbar.classList.remove("scrolled");
+        navbar.classList.add("transparent");
+    } else {
+        navbar.classList.remove("transparent");
+        navbar.classList.add("scrolled");
+    }
+});
+
+
+
+document.getElementById("contactForm").addEventListener("submit", async (e) => {
+    e.preventDefault(); // Prevent page reload
+
+    const statusMessage = document.getElementById("statusMessage");
+    statusMessage.innerText = "Submitting...";
+    statusMessage.style.color = "blue";
+
+    const formData = {
+        firstName: document.getElementById("firstName").value,
+        lastName: document.getElementById("lastName").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+    };
+
+    try {
+        const response = await fetch("http://localhost:5000/send-email", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData),
+        });
+
+        const data = await response.json();
+        statusMessage.innerText = data.message;
+        statusMessage.style.color = "green";
+    } catch (error) {
+        statusMessage.innerText = "Error sending message!";
+        statusMessage.style.color = "red";
+    }
+});
+
+
+// Scroll to top 
+window.onscroll = function () {
+    var btn = document.getElementById("scrollToTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Scroll to top function
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+// our work slider
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    loop: true,  // Infinite loop
+    speed: 3000, // Slow and smooth transition speed
+    autoplay: {
+      delay: 0, // No delay between slides
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    effect: "slide", // Ensures smooth sliding effect
+    grabCursor: true,
+    allowTouchMove: false, // Disable manual scrolling for a smooth effect
+    breakpoints: {
+      320: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+      1200: { slidesPerView: 4 }
+    }
+});
+
+// toggle form
+function toggleForm() {
+            document.getElementById('applyForm').classList.toggle('show');
+        }
+
+        document.querySelector('.apply-btn').addEventListener('click', toggleForm);
+
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
