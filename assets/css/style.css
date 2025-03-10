@@ -703,7 +703,8 @@ p {
     width: 100%;
     min-height: 100vh; /* Ensures section height */
     z-index: 1; /* Keeps content above the background */
-    background: url('assets/award/bg-award3.jpg') no-repeat center center fixed;
+    background: url('https://github.com/IamSanjayGawai/toads/assets/award/bg-award3.jpg?v=1') no-repeat center center fixed;
+
     background-size: cover;
     background-attachment: fixed; /* Enables parallax effect */
     background-color:  rgba(0, 0, 0, 0.1);
