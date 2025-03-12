@@ -19,8 +19,6 @@
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
@@ -55,8 +53,7 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav ms-auto">
       <li class="nav-item"><a class="nav-link text-light" href="#">Home</a></li>
-      <li class="nav-item"><a class="nav-link text-light" href="#our-works">Our Works</a></li>
-      <li class="nav-item"><a class="nav-link text-light" href="#awards">Awards</a></li>
+
 
       <!-- Courses Dropdown -->
       <li class="nav-item dropdown">
@@ -71,8 +68,8 @@
                 B.voc in Graphics and Animation</a></li>
             </ul>
           </li>
-          <li class="dropdown-submenu">
-            <a class="dropdown-item dropdown-toggle" href="#">Animation</a>
+          <li class="dropdown-submenu ">
+            <a class="dropdown-item dropdown-toggle " href="#">Animation</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Animation Prime</a></li>
               <li><a class="dropdown-item" href="#">Animation Elite</a></li>
@@ -96,7 +93,7 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">UI/UX Prime
               </a></li>
-              <li><a class="dropdown-item" href="#">Illustrator</a></li>
+              <li><a class="dropdown-item" href="#">Motion Graphics Prime</a></li>
             </ul>
           </li>
           <li class="dropdown-submenu">
@@ -120,7 +117,8 @@
 
         </ul>
       </li>
-
+      <li class="nav-item"><a class="nav-link text-light" href="#awards">Awards</a></li>
+      <li class="nav-item"><a class="nav-link text-light" href="#our-works">Our Works</a></li>
       <li class="nav-item"><a class="nav-link text-light" href="#partners">Partners</a></li>
       <li class="nav-item"><a class="nav-link text-light" href="#about-us">About Us</a></li>
       <li class="nav-item"><a class="nav-link text-light" href="#why-toads">Why Toads</a></li>
@@ -131,180 +129,174 @@
 
 
 
+<!-- Hero Section -->
+<div class="hero-section">
+  <!-- Background Video -->
+  <video autoplay muted loop class="background-video">
+      <source src="https://www.toadsindia.com/front/images/website%20video.mp4" type="video/mp4">
+  </video>
 
-   <!-- Hero Section -->
-   <div class="hero-section">
-    <!-- Background Video -->
-    <video autoplay muted loop class="background-video">
-        <source src="https://www.toadsindia.com/front/images/website%20video.mp4" type="video/mp4">
-    </video>
+  <!-- Overlay -->
+  <div class="video-overlay"></div>
 
-    <!-- Overlay -->
-    <div class="video-overlay"></div>
+  <!-- Content -->
+  <div class="content">
+      <h1 class="heading-1">India’s 1ˢᵗ Generative </h1>
+      <h1 class="heading-1 text-accent">AI Academy</h1>
+      <button class="custom-button apply-btn">Apply Now</button>
+  </div>
 
-    <!-- Content -->
-    <div class="content r">
-      <div class="d-flex justify-content-center align-items-center ">
-        <h1>India’s 1ˢᵗ AI Academy</h1>
-    </div>
-        <button class="custom-button apply-btn">Apply Now</button>
-    </div>
+<!-- Scooter Image Container -->
+<div class="scooter-container">
+  <img src="assets/placement_logos/scooter.jpg" alt="Scooter" class="scooter-image">
 </div>
 
-<!-- Sliding Form -->
-<div class="form-container" id="applyForm">
-    <button class="close-btn text-success" onclick="toggleForm()">×</button>
-    <h2 class="heading-2">Apply Now</h2>
-    <form>
-        <div class="mb-3">
-            <label class="form-label">Full Name</label>
+
+  <!-- Sliding Form (INSIDE HERO SECTION) -->
+  <div class="form-container" id="applyForm">
+      <button class="close-btn text-success" onclick="toggleForm()">×</button>
+      <h2 class="heading-2 text-accent">Apply Now</h2>
+      <form>
+          <div class="mb-3 d-flex flex-column justify-content-flex-start align-items-start">
+              <label class="form-label">First Name</label>
+              <input type="text" class="form-control" placeholder="Enter your name">
+          </div>
+          <div class="mb-3 d-flex flex-column justify-content-flex-start align-items-start">
+            <label class="form-label">Last Name</label>
             <input type="text" class="form-control" placeholder="Enter your name">
         </div>
-        <div class="mb-3">
-            <label class="form-label">Email</label>
-            <input type="email" class="form-control" placeholder="Enter your email">
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Phone</label>
-            <input type="tel" class="form-control" placeholder="Enter your phone">
-        </div>
-        <button type="submit" class="btn btn-success w-100">Submit</button>
-    </form>
+          <div class="mb-3 d-flex flex-column justify-content-flex-start align-items-start">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Enter your email">
+          </div>
+          <div class="mb-3 d-flex flex-column justify-content-flex-start align-items-start">
+              <label class="form-label">Phone</label>
+              <input type="tel" class="form-control" placeholder="Enter your phone">
+          </div>
+          <button type="submit" class="submit-btn w-100">Submit</button>
+      </form>
+  </div>
+
+
 </div>
 
+
       <!-- Hero Section close -->
-       
+    
+      
+           
     <!-- Counter Section -->
-    <!-- <div class="container mb-5 counter-section border w-100">
+    <div class="container  hero-bottom  w-100 mt-5">
       <div class="row text-center d-flex justify-content-center align-items-center p-2">
-        <div class="col-6 col-md-3 stat  d-flex justify-content-center align-items-center flex-column border">
-          <div>
-            <span class="number text-accent" data-target="1.2">0</span>
-            <span class="plus text-accent">+</span>
-            <div class="description">Year of Experience</div>
-          </div>
+        <div class="col-6 col-md-3 stat  d-flex justify-content-center align-items-center flex-column ">
+     
+       <img src="/assets/hero-bottom/100Intership.jpg" alt="Counter Icon" class="img-fluid">
+ 
+    
           
         </div>
-        <div class="col-6 col-md-3 stat d-flex justify-content-center align-items-center flex-column border">
-          <div>
-            <span class="number text-accent" data-target="10">0</span>
-            <span class="plus text-accent">+</span>
-            <div class="description">Projects Done</div>
-          </div>
+        <div class="col-6 col-md-3 stat  d-flex justify-content-center align-items-center flex-column ">
+     
+          <img src="/assets/hero-bottom/20 Years.jpg" alt="Counter Icon" class="img-fluid">
+    
        
-        </div>
-        <div class="col-6 col-md-3 stat d-flex justify-content-center align-items-center flex-column border">
-          <div>
-            <span class="number text-accent" data-target="75">0</span>
-            <span class="plus text-accent">+</span>
-            <div class="description">Bugs Solved</div>
-          </div>
-          
-        </div>
-        <div class="col-6 col-md-3 stat d-flex justify-content-center align-items-center flex-column border">
-          <div>
-            <span class="number text-accent" data-target="1000">0</span>
-            <span class="plus text-accent">+</span>
-            <div class="description">Linkedin Connections</div>
-          </div>
-          
-        </div>
+             
+           </div>
+           <div class="col-6 col-md-3 stat  d-flex justify-content-center align-items-center flex-column ">
+     
+            <img src="/assets/hero-bottom/India No. 1.jpg" alt="Counter Icon" class="img-fluid">
+      
+         
+               
+             </div>
+             <div class="col-6 col-md-3 stat  d-flex justify-content-center align-items-center flex-column ">
+     
+              <img src="/assets/hero-bottom/Industry.jpg" alt="Counter Icon" class="img-fluid">
+        
+           
+                 
+               </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- Counter Section closed -->
 
-  <!-- Our work -->
-  <div class="work-section mb-5 mt-5 px-5" id="our-works">
-    <div class="work-up text-center mb-4">
-      <h2 class="heading-2 text-accent">Our Works</h2>
-    </div>
+    
+<!-- our Courses  -->
+<div class="container-fluid courses-section ">  
+  <div class="container py-5 text-center ">
+    <h1 class="heading-2 mb-5 text-accent">Our Top Notch Courses</h1>
+    <div class="row justify-content-center">
+        
+        <div class="col-md-4 mb-4">
+            <div class="course-card" style="background-image: url('./assets/courses/b.vox.jpg');">
+                <div class="course-content">
+                    <h4>Degree</h4>
+                    <button class="course-button">Read More</button>
+                </div>
+            </div>   
+        </div>
   
-    <!-- Swiper Slider -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/work/Badi heroine banti hai.jpg" class="poster-img-top" alt="Movie 1">
-          </div>
+        <div class="col-md-4 mb-4">
+            <div class="course-card" style="background-image: url('./assets/courses/Animation_Gold.jpg');">
+                <div class="course-content">
+                    <h4>Animation</h4>
+                    <button class="course-button">Read More</button>
+                </div>
+            </div>
         </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/work/Chandra Dev.jpg" class="poster-img-top" alt="Movie 2">
-          </div>
+  
+        <div class="col-md-4 mb-4">
+            <div class="course-card" style="background-image: url('./assets/courses/vfx_Elite.jpg');">
+                <div class="course-content">
+                    <h4>VFX</h4>
+                    <button class="course-button">Read More</button>
+                </div>
+            </div>
         </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/work/Dharavi Bank.jpg" class="poster-img-top" alt="Movie 3">
-          </div>
+  
+        <div class="col-md-4 mb-4">
+            <div class="course-card" style="background-image: url('./assets/courses/graphic.jpg');">
+                <div class="course-content">
+                    <h4>Graphics Design</h4>
+                    <button class="course-button">Read More</button>
+                </div>
+            </div>
         </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/work/Dil Logical.jpg" class="poster-img-top" alt="Movie 4">
-          </div>
+  
+        <div class="col-md-4 mb-4">
+            <div class="course-card" style="background-image: url('./assets/courses/Gaming.jpg');">
+                <div class="course-content">
+                    <h4>Gaming Course</h4>
+                    <button class="course-button">Read More</button>
+                </div>
+            </div>
         </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/work/Ek Farzi Love Story.jpg" class="poster-img-top" alt="Movie 5">
-          </div>
+  
+        <div class="col-md-4 mb-4">
+            <div class="course-card" style="background-image: url('./assets/courses/Design_shotturm_COURSE.jpg');">
+                <div class="course-content">
+                    <h4>Short Term Courses</h4>
+                    <button class="course-button">Read More</button>
+                </div>
+            </div>
         </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/work/Half Love Half Arranged.jpg" class="poster-img-top" alt="Movie 6">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/work/Hunter.jpg" class="poster-img-top" alt="Movie 7">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/work/Industry.jpg" class="poster-img-top" alt="Movie 8">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/work/Namacool.jpg" class="poster-img-top" alt="Movie 9">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/work/Power of Paanch.jpg" class="poster-img-top" alt="Movie 10">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/work/Trial.jpg" class="poster-img-top" alt="Movie 11">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/work/Zara Hatke Zara Bachke.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-      </div>
-      
-      <!-- Pagination & Navigation -->
-      <div class="swiper-pagination"></div>
-
+  
     </div>
   </div>
-  
+  </div>
+    <!-- our work:Close  -->
 
-    <!-- our work closed -->
-
-      
         <!-- Award Section start -->
 
         <div class=" text-center py-5 mb-5 award-background" id="awards">
-          <h2 class="text-warning font-weight-bold mb-2 text-accent">
+          <h2 class="heading-2 mb-2 text-accent hidden">
             Multi Award Winner Studio's Academy
           </h2>
           <p class="mb-5 text-accent fs-6">
 
           </p>
-          <div class="row justify-content-center">
+          <div class="row justify-content-center hidden">
             <div class="col-md-4 mb-4">
               <div class="award-image">
                 <img src="assets/award/awardlogo.webp" alt="Award trophy" class="img-fluid">
@@ -314,25 +306,25 @@
             <div class="col-md-8 d-flex justify-content-center align-items-center">
               <div class="row awards-list-img ">
                 <div class="col-md-12 mb-4 d-flex flex-column justify-content-center align-items-center">
-                  <img src="assets/award/award1.webp" alt="Best Visual Effects NAZAR" class="img-fluid mb-2">
+                  <img src="assets/award/NAZAR .png" alt="Best Visual Effects NAZAR" class="img-fluid mb-2">
                   <span class=" text-accent fs-6">
-                    Best Visual Effects PISHACHINI
+                    Best Visual Effects NAZAR
                   </span>
                   <span class="text-accent fs-6">
-                    The 23rd ITA Awards 2023
+                    The 18rd ITA Awards 2018
                   </span>
                 </div>
                 <div class="col-md-6 mb-4 d-flex flex-column justify-content-center align-items-center">
-                  <img src="assets/award/award1.webp" alt="Best Visual Effects NAZAR" class="img-fluid mb-2">
+                  <img src="assets/award/YA JADU HAI JINN KA.png" alt="Best Visual Effects NAZAR" class="img-fluid mb-2">
                   <span class=" text-accent fs-6">
-                    Best Visual Effects PISHACHINI
+                    Best Visual Effects YA JADU HAI JINN KA
                   </span>
                   <span class="text-accent fs-6">
-                    The 23rd ITA Awards 2023
+                    The 21rd ITA Awards 2021
                   </span>
                 </div>
                 <div class="col-md-6 mb-4 d-flex flex-column justify-content-center align-items-center">
-                  <img src="assets/award/award1.webp" alt="Best Visual Effects NAZAR" class="img-fluid mb-2">
+                  <img src="assets/award/PISHACHINI.png" alt="Best Visual Effects NAZAR" class="img-fluid mb-2">
                   <span class=" text-accent fs-6">
                     Best Visual Effects PISHACHINI
                   </span>
@@ -346,26 +338,178 @@
             </div>
           </div>
         </div>
+<!-- end -->
+
+
+  <!-- Our work -->
+  <div class="work-section mb-5 mt-5   w-100 px-5" id="our-works">
+    <div class="work-up text-center mb-4">
+      <h2 class="heading-2 text-accent">Our Works</h2>
+    </div>
+    <h2 class="heading-3 text-accent">
+       Movies <span class="text-theme">&#10148;</span></h2>
+  
+    <!-- Swiper Slider -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/movies/Avatar 2.jpg" class="poster-img-top" alt="Movie 1">
+          </div>
+        </div>
+        <!-- <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/movies/Batman.jpg" class="poster-img-top" alt="Movie 2">
+          </div>
+        </div> -->
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/movies/Flash.jpeg" class="poster-img-top" alt="Movie 3">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/movies/KGF 2.jpg" class="poster-img-top" alt="Movie 4">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/movies/lost city movie.jpg" class="poster-img-top" alt="Movie 5">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/movies/Pushpa 2.jpg" class="poster-img-top" alt="Movie 6">
+          </div>
+        </div>
+     
+      </div>
+      
+      <!-- Pagination & Navigation -->
+      <div class="swiper-pagination"></div>
+
+    </div>
+  </div>
+  
+
+  <div class="work-section mb-5 mt-5 w-100 px-5" id="our-works">
+
+    <h2 class="heading-3 text-accent">Serials <span class="text-theme">&#10148;</span></h2>
+    <!-- Swiper Slider -->
+    <div class="swiper mySwiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Akbar Birbal.jpg" class="poster-img-top" alt="Movie 1">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/jadu teri nazar.png" class="poster-img-top" alt="Movie 2">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Nazar.jpg" class="poster-img-top" alt="Movie 3">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Chandradev.jpg" class="poster-img-top" alt="Movie 4">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Pishachini.jpg" class="poster-img-top" alt="Movie 5">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Fanaa Ishq Marjawan.jpg" class="poster-img-top" alt="Movie 6">
+          </div>
+        </div>
+      
+      </div>
+      
+      <!-- Pagination & Navigation -->
+      <div class="swiper-pagination"></div>
+
+    </div>
+  </div>
+
+  <div class="work-section mb-5 mt-5 w-100 px-5" id="our-works">
+    <h2 class="heading-3 text-accent">
+      Web Series <span class="text-theme">&#10148;</span>
+    </h2>
+    
+  
+    <!-- Swiper Slider -->
+    <div class="swiper mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Aadha Ishq.jpg" class="poster-img-top" alt="Movie 1">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Hunter Tootega Bahi Todega.jpg" class="poster-img-top" alt="Movie 2">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Call My Agent.jpg" class="poster-img-top" alt="Movie 3">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Ankahi Ansuni.jpg" class="poster-img-top" alt="Movie 4">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Operation Parindey.jpg" class="poster-img-top" alt="Movie 5">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/badi heroine banti hai.jpg" class="poster-img-top" alt="Movie 6">
+          </div>
+        </div>
+
+      </div>
+      
+      <!-- Pagination & Navigation -->
+      <div class="swiper-pagination"></div>
+
+    </div>
+  </div>
+  
+  
+    <!-- our work closed -->
 
 
         <!-- affilate partners -->
 <div class="partner-section mb-5" id="partners">
   <div class="partner-text">
     <p class="partner-tagline">TEAM. CUSTOMER. COMMUNITY</p>
-    <h2 class="heading-2">We Work With the Best Partners</h2>
-    <p class="partner-description">
+    <h2 class="heading-2 text-accent">We Work With the Best Partners</h2>
+    <p class="partner-description text-accent">
       While we are at the forefront of and specialize in design-build, we are very familiar with a number of delivery methods and are confident we can find the process that will best help you meet your goals.
     </p>
     <button class="custom-button">READ MORE</button>
   </div>
 
   <div class="partner-logos">
-    <img src="assets/brand/01.png" alt="Classic Design Studio">
-    <img src="assets/brand/05.png" alt="Design Studio">
+    <img src="assets/brand/CMIDS  Logo.jpg" alt="Classic Design Studio">
+    <img src="assets/brand/Creative ant Logo.png" alt="Design Studio">
     <img src="assets/brand/06.jpg" alt="Vintage Studio">
-    <img src="assets/brand/03.jpeg" alt="Your Coach">
-    <img src="assets/brand/02.png" alt="Hello Sunshine">
-    <img src="assets/brand/04.png" alt="Unlimited Outdoor Adventures">
+    <img src="assets/brand/Flying Toads Logo.png" alt="Your Coach">
+    <img src="assets/brand/MESC Logo.jpg" alt="Hello Sunshine">
+    <img src="assets/brand/NSDC Logo.png" alt="Unlimited Outdoor Adventures">
+    <img src="assets/brand/ISO LOGO PNG.png" alt="Unlimited Outdoor Adventures">
+    <img src="assets/brand/Sandip Uni Logo.png" alt="Unlimited Outdoor Adventures">
+    <img src="assets/brand/Skill India Logo.png" alt="Unlimited Outdoor Adventures">
   </div>
 </div>
 
@@ -376,70 +520,6 @@
 
         
 
-<!-- our Courses  -->
-<div class="container-fluid courses-section ">  
-<div class="container py-5 text-center ">
-  <h1 class="heading-2 mb-5 text-accent">Our Top Notch Courses</h1>
-  <div class="row justify-content-center">
-      
-      <div class="col-md-4 mb-4">
-          <div class="course-card" style="background-image: url('https://storage.googleapis.com/a1aa/image/fizlcjAL495CIAX8BHNZuLbmF1yNKpzQcoZnFuSQq5M.jpg');">
-              <div class="course-content">
-                  <h4>Degree</h4>
-                  <button class="course-button">Read More</button>
-              </div>
-          </div>   
-      </div>
-
-      <div class="col-md-4 mb-4">
-          <div class="course-card" style="background-image: url('https://storage.googleapis.com/a1aa/image/AsHKlyYVdD8B99V_BAvNSqGgduJJvD8MTj9SFjy9SAw.jpg');">
-              <div class="course-content">
-                  <h4>Animation</h4>
-                  <button class="course-button">Read More</button>
-              </div>
-          </div>
-      </div>
-
-      <div class="col-md-4 mb-4">
-          <div class="course-card" style="background-image: url('https://storage.googleapis.com/a1aa/image/3yBhpb5aAH64IjvQwJrvpanuiDpfm9LBDM8qR4jboB4.jpg');">
-              <div class="course-content">
-                  <h4>VFX</h4>
-                  <button class="course-button">Read More</button>
-              </div>
-          </div>
-      </div>
-
-      <div class="col-md-4 mb-4">
-          <div class="course-card" style="background-image: url('https://storage.googleapis.com/a1aa/image/CHbC_S3TqhG3SVskig_p3epQqlZY5qQlU-c3RBbIfms.jpg');">
-              <div class="course-content">
-                  <h4>Graphics Design</h4>
-                  <button class="course-button">Read More</button>
-              </div>
-          </div>
-      </div>
-
-      <div class="col-md-4 mb-4">
-          <div class="course-card" style="background-image: url('https://storage.googleapis.com/a1aa/image/N-blw-ZdtENUfegWUnNLrZtO6vVTuwxyPTtJYkhVCpM.jpg');">
-              <div class="course-content">
-                  <h4>Gaming Course</h4>
-                  <button class="course-button">Read More</button>
-              </div>
-          </div>
-      </div>
-
-      <div class="col-md-4 mb-4">
-          <div class="course-card" style="background-image: url('https://storage.googleapis.com/a1aa/image/115B9Fo1ltyMO5qeDtvrI0JszVM17Pzjh_qF2s6Xu9A.jpg');">
-              <div class="course-content">
-                  <h4>Short Term Courses</h4>
-                  <button class="course-button">Read More</button>
-              </div>
-          </div>
-      </div>
-
-  </div>
-</div>
-</div>
-  <!-- our work:Close  -->
   
 
 
@@ -448,9 +528,9 @@
       <div class="container-fluid mb-5 our-features" id="about-us">
         <div class="container">
           <div class="row mb-4">
-            <div class="col-md-8">
-              <h2 class="heading-2 text-white">About Us</h2>
-              <p class="text-white  heading-3 mb-5">
+            <div class="col-md-8 d-flex flex-column justify-content-center align-items-start hidden">
+              <h2 class="heading-2 text-white">Toads Us</h2>
+              <p class="text-white  heading-3 mb-5 ">
                 Unlocking Potential Through Quality Education
               </p>
             </div>
@@ -464,7 +544,7 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row hidden" >
             <div class="col-md-4">
               <div class="features-card mb-4 mb-md-0">
                 <div class="features-card-body p-4">
@@ -524,7 +604,7 @@
             <div class="icon-container">
               <i class="fas fa-shield-alt">1</i>
             </div>
-            <h3 class="benefit-title">Guaranteed Internship to Job Path</h3>
+            <h3 class="benefit-title ">Guaranteed Internship to Job Path</h3>
             <p class="benefit-description">Begin with an industry-backed internship that leads directly to full-time career opportunities with our partner studios.</p>
           </div>
           
@@ -626,113 +706,171 @@
 
       <!-- why toads ends -->
 
-      <!-- trusted clients -->
+
+<!-- Client 2 - Bootstrap Brain Component -->
+<section class="placement-section py-5">
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-center w-100 mb-5">
+        <h2 class="heading-2 text-accent text-center">Placement Partners</h2>
+    
+    </div>
+  </div>
+
+  <div class="container overflow-hidden">
+    <div class="placement_partners">
+    
+          <img src="assets/placement_logos/affinityx.png" alt="Classic Design Studio" class="img-fluid mb-3">
+
+          <img src="assets/placement_logos/Axiom.png" alt="Classic Design Studio" class="img-fluid mb-3">
+         
+          <img src="assets/placement_logos/Eilan Motion Pictures.jpg" alt="Classic Design Studio" class="img-fluid mb-3">
+         
+          <img src="assets/placement_logos/Goledn Robotic.jpg" alt="Classic Design Studio" class="img-fluid mb-3">
+         
+          <img src="assets/placement_logos/jungleegames.png" alt="Classic Design Studio" class="img-fluid mb-3">
+         
+          <img src="assets/placement_logos/Lakshya Studio.png" alt="Classic Design Studio" class="img-fluid mb-3">
+         
+          <img src="assets/placement_logos/makutavfx.png" alt="Classic Design Studio" class="img-fluid mb-3">
+         
+          <img src="assets/placement_logos/Red Chillies.png" alt="Classic Design Studio" class="img-fluid mb-3">
+         
+          <img src="assets/placement_logos/Splat logo.png" alt="Classic Design Studio" class="img-fluid mb-3">
+               
+          <img src="assets/placement_logos/Technicolor_logo.svg" alt="Classic Design Studio" class="img-fluid mb-3">
+         
+          <img src="assets/placement_logos/trace-vfx.jfif" alt="Classic Design Studio" class="img-fluid mb-3">
+         
+          <img src="assets/placement_logos/wackytoon 1.png" alt="Classic Design Studio" class="img-fluid mb-3">
+
+          <img src="assets/placement_logos/wackytoon studio.png" alt="Classic Design Studio" class="img-fluid mb-3">
+        
+          <img src="assets/placement_logos/Zee5.svg" alt="Classic Design Studio" class="img-fluid mb-3">
+  
+    </div>
+  </div>
+</section>
+
+
 
  <!-- Trusted Clients Section -->
 <div class="container-fluid partner py-5 mt-5">
   <div class="container">
     <div class="row text-center">
       <div class="col">
-        <h2 class="heading-2 mb-3 text-accent text-dark">Our Valued Clients</h2>
-        <p class="text-light mb-4 text-dark">
+        <h2 class="heading-2 mb-3 text-accent ">Our Valued Clients</h2>
+        <p class="text-light mb-4 ">
           We take pride in partnering with leading brands across industries.
         </p>
       </div>
     </div>
 
-    <!-- Client Logos Grid -->
-    <div class="row justify-content-center ali clients-grid  d-flex gap-5">
-      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
-        <img src="assets/trusted-clients/altbalaji.png" alt="AltBalaji" class="client-logo">
-      </div>
-      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
-        <img src="assets/trusted-clients/andtv.png" alt="AndTV" class="client-logo">
-      </div>
-      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
-        <img src="assets/trusted-clients/disneyhoster.png" alt="DisneyHoster" class="client-logo">
-      </div>
-      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
-        <img src="assets/trusted-clients/icici.png" alt="ICICI" class="client-logo">
-      </div>
-      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
-        <img src="assets/trusted-clients/sonyliv.png" alt="SonyLiv" class="client-logo">
-      </div>
-      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
-        <img src="assets/trusted-clients/shamaroo.png" alt="Shamaroo" class="client-logo">
-      </div>
-      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
-        <img src="assets/trusted-clients/starplus.png" alt="Star Plus" class="client-logo">
-      </div>
-      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
-        <img src="assets/trusted-clients/voot.png" alt="Voot" class="client-logo">
-      </div>
-      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
-        <img src="assets/trusted-clients/zee5.png" alt="Zee5" class="client-logo">
-      </div>
-      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
-        <img src="assets/trusted-clients/zeetv.png" alt="Zee TV" class="client-logo">
-      </div>
-      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
-        <img src="assets/trusted-clients/starbharat.png" alt="Star Bharat" class="client-logo">
-      </div>
-      <div class=" col-sm-4 col-md-3 col-lg-2 text-center">
-        <img src="assets/trusted-clients/swaminarayana.png" alt="Swaminarayana" class="client-logo">
-      </div>
-    </div>
-  </div>
-</div>
-
     
+<!-- Optimized Client Logos Grid -->
+<div class=" clients-grid ">
+  
+  <!-- Streaming Platforms -->
+  
+    <img src="assets/trusted-clients/Netflix_Logo.png" alt="Netflix" class="client-logo">
+ 
+  
+    <img src="assets/trusted-clients/Prime Video.png" alt="Prime Video" class="client-logo">
+ 
+  
+    <img src="assets/trusted-clients/disney-hotstar-logo-png_seeklogo-427118.png" alt="Disney+ Hotstar" class="client-logo">
+ 
+  
+    <img src="assets/trusted-clients/MX_Player_Logo.png" alt="MX Player" class="client-logo">
+ 
+  
+    <img src="assets/trusted-clients/Altbalaji Logo.png" alt="AltBalaji" class="client-logo">
+ 
 
-        <!-- Contact Form Section -->
-<div class="container-fluid mb-5 contact-section py-5" id="contact">
-  <div class="container">
-    <div class="row">
-      <!-- Left Side with Images -->
-      <div class="col-md-6">
-        <h2 class="heading-2 text-light">Let's talk</h2>
-        <div class="position-relative w-100">
-          <img src="assets/img/h1_img-9.png" alt="" class="position-absolute model" />
-          <img src="assets/img/h1_img-7.png" alt="" class="position-absolute sticker" />
-        </div>
-      </div>
+  
+  <!-- Sony Network -->
+  
+    <img src="assets/trusted-clients/Sony television.png" alt="Sony TV" class="client-logo">
+ 
+  
+    <img src="assets/trusted-clients/Sony_Sab_new_logo.png" alt="Sony SAB" class="client-logo">
+ 
+  
+    <img src="assets/trusted-clients/Sony Pal.png" alt="Sony Pal" class="client-logo">
+ 
+  
+    <img src="assets/trusted-clients/Sonyliv.jpeg" alt="SonyLIV" class="client-logo">
+ 
+  
+    <img src="assets/trusted-clients/colorstv1.jpeg" alt="Voot" class="client-logo">
+ 
+  
+  <!-- Star Network -->
+   
+  
+    <img src="assets/trusted-clients/download.png" alt="Zee5" class="client-logo">
+ 
+  
+    <img src="assets/trusted-clients/Star Plus.png" alt="Star Plus" class="client-logo">
+ 
+  
+    <img src="assets/trusted-clients/Star_Utsav_2015.webp" alt="Star Utsav" class="client-logo">
+ 
 
-      <!-- Right Side with Form -->
-      <div class="col-md-6">
-        <div class="card border-0">
-          <div class="card-body p-5">
-            <p class="fs-5 mb-4">Let's talk about your career growth</p>
-            <form id="contactForm">
-              <div class="row">
-                <div class="col-md-6 form-sect">
-                  <label for="firstName">First Name</label>
-                  <input type="text" id="firstName" class="form-control" required />
-                </div>
-                <div class="col-md-6 form-sect">
-                  <label for="lastName">Last Name</label>
-                  <input type="text" id="lastName" class="form-control" required />
-                </div>
-                <div class="col-md-12 form-sect">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" class="form-control" required />
-                </div>
-                <div class="col-md-12 form-sect">
-                  <label for="phone">Mobile Number</label>
-                  <input type="tel" id="phone" class="form-control" required />
-                </div>
-                <div class="col-md-12">
-                  <button type="submit" class="custom-button">Submit</button>
-                </div>
-              </div>
-            </form>
-            <p id="statusMessage" class="mt-3"></p>
-          </div>
-        </div>
-      </div>
-    </div>
+  
+  <!-- Zee Network -->
+  
+    <img src="assets/trusted-clients/Zee TV Logo.png" alt="Zee TV" class="client-logo">
+ 
+  
+    <img src="assets/trusted-clients/Z Anmo.webp" alt="Zee Anmol" class="client-logo">
+ 
+  
+  <!-- Colors Network -->
+  
+    <img src="assets/trusted-clients/rishtey.png" alt="Rishtey" class="client-logo">
+ 
+  
+  <!-- Other TV Channels -->
+  
+    <img src="assets/trusted-clients/Dangaltv.png" alt="Dangal TV" class="client-logo">
+ 
+  
+    <img src="assets/trusted-clients/Tv_teresstrial_dd.webp" alt="Doordarshan" class="client-logo">
+ 
+  
+    <img src="assets/trusted-clients/&TV.webp" alt="Doordarshan" class="client-logo">
+ 
+  
+  
+    <img src="assets/trusted-clients/Life_OK.webp" alt="Doordarshan" class="client-logo">
+ 
+  
+  
+    <img src="assets/trusted-clients/Shemaroo_Umang.png" alt="Shemaroo Umang" class="client-logo">
+ 
+  
+  <!-- Production Houses -->
+  
+    <img src="assets/trusted-clients/4 Lions Films Logo.jpg" alt="4 Lions Films" class="client-logo">
+ 
+  
+    <img src="assets/trusted-clients/Banijay Asia Logo.jpg" alt="Banijay Asia" class="client-logo">
+ 
+  
+  <!-- Other Brands -->
+  
+    <img src="assets/trusted-clients/Baps Logo.png" alt="BAPS" class="client-logo">
+ 
+  
+    <img src="assets/trusted-clients/ICICI Lambord Logo.png" alt="ICICI Lombard" class="client-logo">
+ 
+  
+    <img src="assets/trusted-clients/BARC Logo.webp" alt="ICICI Lombard" class="client-logo">
+ 
+  
+</div>
   </div>
 </div>
-
 
 
  <!-- Map Container -->
@@ -741,11 +879,65 @@
   <h2 class="heading-2 text-accent">Our Location</h2>
   <p class="fs-5 mb-4 text-accent">Our experienced staff, combined with our global network, allow us to provide the
     support you need</p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121037.3702032496!2d73.65675709726561!3d18.555192699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf656b67eba9%3A0xef462a0b2a21b02d!2sTOADS%20ACADEMY!5e0!3m2!1sen!2sin!4v1741639071767!5m2!1sen!2sin" 
-width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121037.3702032496!2d73.65675709726561!3d18.555192699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf656b67eba9%3A0xef462a0b2a21b02d!2sTOADS%20ACADEMY!5e0!3m2!1sen!2sin!4v1741810314236!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+
 </div>
 
 <!-- amp address -->
+
+
+    
+  <!-- Contact Form Section -->
+  <div class="container-fluid mb-5 contact-section py-5" id="contact">
+    <div class="container">
+      <div class="row">
+        <!-- Left Side with Images -->
+        <div class="col-md-6">
+          <h2 class="heading-2 text-light">Let's talk</h2>
+          <div class="position-relative w-100">
+            <img src="assets/img/h1_img-9.png" alt="" class="position-absolute model" />
+            <img src="assets/img/h1_img-7.png" alt="" class="position-absolute sticker" />
+          </div>
+        </div>
+  
+        <!-- Right Side with Form -->
+        <div class="col-md-6">
+          <div class="card border-0">
+            <div class="card-body p-5">
+              <p class="fs-5 mb-4 text-accent">Let's talk about your career growth</p>
+              <form id="contactForm">
+                <div class="row">
+                  <div class="col-md-6 form-sect">
+                    <label for="firstName" class="text-accent">First Name</label>
+                    <input type="text" id="firstName" class="form-control" required />
+                  </div>
+                  <div class="col-md-6 form-sect">
+                    <label for="lastName" class="text-accent">Last Name</label>
+                    <input type="text" id="lastName" class="form-control" required />
+                  </div>
+                  <div class="col-md-12 form-sect">
+                    <label for="email" class="text-accent">Email</label>
+                    <input type="email" id="email" class="form-control" required />
+                  </div>
+                  <div class="col-md-12 form-sect">
+                    <label for="phone" class="text-accent">Mobile Number</label>
+                    <input type="tel" id="phone" class="form-control" required />
+                  </div>
+                  <div class="col-md-12">
+                    <button type="submit" class="custom-button">Submit</button>
+                  </div>
+                </div>
+              </form>
+              <p id="statusMessage" class="mt-3"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
 
         <!-- footer  -->
 <footer class="container-fluid footer">
@@ -835,14 +1027,18 @@ width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" re
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 <!-- our worl slider js swiper -->
  <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-        <!-- JavaScript for Counter Animation -->
+
+
+
         <script>
+
+
+// counter animation
           document.addEventListener("DOMContentLoaded", () => {
             const counters = document.querySelectorAll(".number");
             const speed = 100; // Adjust speed of counting
@@ -878,6 +1074,110 @@ width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" re
 
             counters.forEach((counter) => observer.observe(counter));
           });
+
+// course aniation 
+document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".course-card");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            } else {
+                entry.target.classList.remove("show"); // Reset animation when out of view
+            }
+        });
+    }, { threshold: 0.2 });
+
+    cards.forEach(card => {
+        observer.observe(card);
+    });
+});
+
+
+// partner animation
+
+document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                } else {
+                    entry.target.classList.remove("show"); // Remove to replay animation
+                }
+            });
+        },
+        { threshold: 0.2 } // Trigger when 20% of the section is visible
+    );
+
+    // Select text elements for animation
+    const textElements = document.querySelectorAll(".partner-text, .partner-tagline, .partner-heading, .partner-description, .read-more");
+    
+    textElements.forEach((el) => observer.observe(el));
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".partner-logos img");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show"); // Add animation class
+                } else {
+                    entry.target.classList.remove("show"); // Remove class when out of view
+                }
+            });
+        },
+        { threshold: 0.2 } // Trigger when 20% of the element is visible
+    );
+
+    images.forEach((img) => observer.observe(img));
+});
+
+
+// client animation
+
+document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                } else {
+                    entry.target.classList.remove("show"); // Remove to replay animation
+                }
+            });
+        },
+        { threshold: 0.3 } // Trigger when 30% of the logo is visible
+    );
+
+    // Select all client logos
+    const logos = document.querySelectorAll(".client-logo");
+    logos.forEach((logo) => observer.observe(logo));
+});
+
+
+// about us animation
+
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".hidden");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            } else {
+                entry.target.classList.remove("show");  // Removes animation when leaving
+            }
+        });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+});
+
 
           // Award images
           document.addEventListener("DOMContentLoaded", function () {
@@ -936,7 +1236,7 @@ window.addEventListener("scroll", function () {
 });
 
 
-
+// contact form working 
 document.getElementById("contactForm").addEventListener("submit", async (e) => {
     e.preventDefault(); // Prevent page reload
 
@@ -986,12 +1286,13 @@ window.onscroll = function () {
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
-    spaceBetween: 20,
+    spaceBetween: 5,
     loop: true,  // Infinite loop
-    speed: 3000, // Slow and smooth transition speed
+    speed: 6000, // Slow and smooth transition speed
     autoplay: {
-      delay: 0, // No delay between slides
+      delay: 2, // No delay between slides
       disableOnInteraction: false,
+      pauseOnMouseEnter: false, // Ensures autoplay doesn't stop on hover
     },
     pagination: {
       el: ".swiper-pagination",
@@ -1003,7 +1304,7 @@ var swiper = new Swiper(".mySwiper", {
     },
     effect: "slide", // Ensures smooth sliding effect
     grabCursor: true,
-    allowTouchMove: false, // Disable manual scrolling for a smooth effect
+    allowTouchMove: true, // Allows manual scrolling
     breakpoints: {
       320: { slidesPerView: 1 },
       768: { slidesPerView: 2 },
@@ -1012,22 +1313,117 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
+
+var swiper = new Swiper(".mySwiper1", {
+    slidesPerView: 4,
+    spaceBetween: 5,
+    loop: true,  // Infinite loop
+    speed: 6000, // Slow and smooth transition speed
+    autoplay: {
+      delay: 2, // No delay between slides
+      disableOnInteraction: false,
+      pauseOnMouseEnter: false, // Ensures autoplay doesn't stop on hover
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    effect: "slide", // Ensures smooth sliding effect
+    grabCursor: true,
+    allowTouchMove: true, // Allows manual scrolling
+    breakpoints: {
+      320: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+      1200: { slidesPerView: 4 }
+    }
+});
+
+
+var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: 4,
+    spaceBetween: 5,
+    loop: true,  // Infinite loop
+    speed: 6000, // Slow and smooth transition speed
+    autoplay: {
+      delay: 2, // No delay between slides
+      disableOnInteraction: false,
+      pauseOnMouseEnter: false, // Ensures autoplay doesn't stop on hover
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    effect: "slide", // Ensures smooth sliding effect
+    grabCursor: true,
+    allowTouchMove: true, // Allows manual scrolling
+    breakpoints: {
+      320: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+      1200: { slidesPerView: 4 }
+    }
+});
+
+
 // toggle form
-function toggleForm() {
+let formTimer;
+let manualOpen = false; // Tracks if the form was manually opened
+
+function toggleForm(forceClose = false) {
     const form = document.getElementById('applyForm');
     const applyBtn = document.querySelector('.apply-btn');
+    const scooterImg = document.querySelector('.scooter-container'); // Select scooter image
+
+    if (forceClose) {
+        form.classList.remove('show');
+        scooterImg.classList.remove('show'); // Hide scooter image
+        applyBtn.style.display = 'block';
+        manualOpen = false;
+        return;
+    }
 
     form.classList.toggle('show');
+    scooterImg.classList.toggle('show'); // Toggle scooter image
 
-    // Hide Apply Now button when the form is open
     if (form.classList.contains('show')) {
         applyBtn.style.display = 'none';
+        manualOpen = true;
+
+        // Close form and hide scooter after 10 seconds
+        clearTimeout(formTimer);
+        formTimer = setTimeout(() => {
+            toggleForm(true);
+        }, 10000);
     } else {
         applyBtn.style.display = 'block';
+        manualOpen = false;
     }
 }
 
-document.querySelector('.apply-btn').addEventListener('click', toggleForm);
+// Auto-open form & scooter on page load for 5 seconds
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        toggleForm();
+        formTimer = setTimeout(() => {
+            toggleForm(true);
+        }, 8000);
+    }, 1000);
+});
+
+// Apply Now button click event
+document.querySelector('.apply-btn').addEventListener('click', () => {
+    toggleForm();
+});
+
 
 
         </script>
@@ -1035,3 +1431,233 @@ document.querySelector('.apply-btn').addEventListener('click', toggleForm);
     </div>
   </body>
 </html>
+
+
+
+
+
+        <!-- <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Bekaboo.jpg" class="poster-img-top" alt="Movie 7">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Bombers.jpg" class="poster-img-top" alt="Movie 8">
+          </div>
+        </div> -->
+        <!-- <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Call My Agent.jpg" class="poster-img-top" alt="Movie 9">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Criminal Justice.jpg" class="poster-img-top" alt="Movie 10">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Dharavi Bank.jpg" class="poster-img-top" alt="Movie 11">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Dil Logical.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Ek Farzi Love Story.jpeg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/half love half Arranged.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Fitrat.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Hostages.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Hunter Tootega Bahi Todega.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Fitrat.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Industry.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Namacool.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Operation Parindey.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Power of Paanch.png" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Sajni Shinde Ka Viral.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Shukranu.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Sindoor Kimat.jpeg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/The Trial.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Undekhi.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/XXX Uncensored.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div> -->
+
+   <!-- <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/movies/Sonic.jpg" class="poster-img-top" alt="Movie 7">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/movies/Tanaji.jpg" class="poster-img-top" alt="Movie 9">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/movies/Tejas.jpg" class="poster-img-top" alt="Movie 10">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/movies/The new Avangers.jpg" class="poster-img-top" alt="Movie 11">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/movies/Zara Hatke Zara Bachke.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/movies/Zombivli.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div> -->
+
+
+
+          <!-- <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Happy Ever After.jpg" class="poster-img-top" alt="Movie 7">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Imali 2.jpg" class="poster-img-top" alt="Movie 9">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/imli.jpg" class="poster-img-top" alt="Movie 10">
+          </div>
+        </div> -->
+        <!-- <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/jadu teri nazar.png" class="poster-img-top" alt="Movie 11">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Janani.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Maharaj Ki Jai Ho.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div> -->
+        <!-- <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Nag Panchami.jpeg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Namah.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Nazar.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Parchhayee.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Pishachini.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Shrikant Bashir.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Sindoor Kimat.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Tenali Rama.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Vidrohi.jpeg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/ya jadu hai jinn ka.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div> -->
+
