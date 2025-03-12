@@ -436,9 +436,21 @@ p {
     width: 100%;
     display: block;
     object-fit: cover;
-    height: 500px;
+    max-height: 450px;
     transition: transform 0.5s ease;
 
+}
+
+@media screen and (max-width: 768px) {
+    .poster-img-top {
+        width: 100%;
+        display: block;
+        object-fit: contain;
+        max-height: 350px;
+        transition: transform 0.5s ease;
+    
+    }
+    
 }
 
 
@@ -720,73 +732,6 @@ p {
 }
 
 /*  */
-
-/* Spread effect on hover */
-/* .project-cards:hover::before {
-    width: 300%;
-    height: 300%;
-    top: 0;
-    right: 0;
-    border-radius: 0;
-}
-.project-cards::before { 
-  background: #2aff09; 
-}
-
-/* Different colors for each card */
-/* .project-cards.card-1::before,
-.project-cards.card-2::before,
-.project-cards.card-3::before,
-.project-cards.card-4::before,
-.project-cards.card-5::before,
-.project-cards.card-6::before,
-.project-cards.card-7::before,
-.project-cards.card-8::before,
-.project-cards.card-9::before,
-.project-cards.card-10::before,
-.project-cards.card-11::before,
-.project-cards.card-12::before,
-.project-cards.card-13::before,
-.project-cards.card-14::before,
-.project-cards.card-15::before,
-.project-cards.card-16::before {
-    background: #29ff42e3; 
-} */
-
-/* Award section */
-/* .award-section {
-    background: linear-gradient(to right, #1D164B, #2464A5);
-    color: #fff;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 30px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.right-award {
-    position: relative;
-    order: 2;
-}
-
-.award-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    top: -80px;
-    left: 0;
-    animation: upAndDown 3s ease-in-out infinite;
-}
-
-.award-image img {
-    height: 300px;
-    width: 300px;
-} */
-
 /* Background styling */
 /* Award Section - Parallax Background */
 .award-background {
