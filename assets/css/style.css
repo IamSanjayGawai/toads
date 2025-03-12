@@ -442,10 +442,12 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+
+    
     .poster-img-top {
         width: 100%;
         display: block;
-        object-fit: contain;
+        object-fit: cover;
         max-height: 350px;
         transition: transform 0.5s ease;
     
@@ -509,6 +511,10 @@ p {
     color: white;
 }
 
+.textsection{
+    z-index: 20;
+}
+
 .our-features .features-card::before {
     content: "";
     position: absolute;
@@ -538,6 +544,7 @@ p {
 
 .our-features .features-card .features-card-body .card-description {
     font-size: 0.9rem;
+    
 
 }
 
@@ -580,6 +587,7 @@ p {
     opacity: 1;
     transform: translateY(0);
 }
+
 
 
 
