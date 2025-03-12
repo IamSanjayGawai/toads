@@ -52,6 +52,7 @@ body {
     align-items: center;
     justify-content: center;
     color: var(--white); /* Changed to white for better contrast on black */
+    cursor: none; /* Hide default cursor */
 
 }
 /* wrapper */
@@ -1407,6 +1408,16 @@ flex-direction: column;
 }
 
 
+.frog-cursor {
+    width: 40px; /* Adjust size */
+    height: 40px;
+    position: fixed; /* Stay in place across the screen */
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Prevents interaction issues */
+    z-index: 9999; /* Ensures it's always on top */
+    transform: translate(-50%, -50%);
+  }
 
 /* scroll to top btn */
 #scrollToTopBtn {
