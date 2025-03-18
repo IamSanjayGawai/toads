@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap JS (Make sure it's included) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.footer {
+    margin-top: auto;
+}
+
+        
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.transparent {
+    background-color: rgba(255, 255, 255, 0.1); /* Light opacity */
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 1); /* Darker opacity after scrolling */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  /* Enable dropdown submenus */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-top: -1px;
+    display: none;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
+@media (max-width: 991px) {
+    .navbar {
+      background-color: black !important;
+    }
+  }
+
+  .main-content{
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+    </style>
+</head>
+
+<body class="body-background">
+    <!-- Header -->
+  <!-- Navbar Links -->
+
+
+  <nav class="navbar navbar-expand-lg fixed-top ">
+    <!-- Brand Logo -->
+    <a class="navbar-brand" href="/index.html">
+      <img src="../assets/logo/logo.jpg" alt="Logo" class="logo" style="height: 60px;">
+    </a>
+  
+    <!-- Toggle Button for Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-light" href="/index.html">Home</a></li>
+  
+  
+        <!-- Courses Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Our Courses
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="../detail-courses-pages/bvoc.html
+              ">Degree</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../detail-courses-pages/bvoc.html
+                  ">
+                  B.voc in Graphics and Animation</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu ">
+              <a class="dropdown-item dropdown-toggle " href="#">Animation</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../detail-courses-pages/animation-prime.html">Animation Prime</a></li>
+                <li><a class="dropdown-item" href="../detail-courses-pages/animation-elite.html">Animation Elite</a></li>
+                <li><a class="dropdown-item" href="../detail-courses-pages/animation-gold.html">Animation Gold</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">VFX</a>
+              <ul class="dropdown-menu">
+  
+  
+                <li><a class="dropdown-item" href="../detail-courses-pages/vfx-prime.html">    VFX Prime</a></li>
+                <li><a class="dropdown-item" href="../detail-courses-pages/vfx-elite.html">          
+                  VFX Elite</a></li>
+                  <li><a class="dropdown-item" href="../detail-courses-pages/vfx-gold.html">          
+                    VFX Gold</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">Graphics Design</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../detail-courses-pages/ui-ux-prime.html">UI/UX Prime
+                </a></li>
+                <li><a class="dropdown-item" href="../detail-courses-pages/motion-graphic-prime.html">Motion Graphics Prime</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="">Gaming Course</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../detail-courses-pages/gaming-apex.html">Gaming Prime</a></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">Short Term Course</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../detail-courses-pages/vfx-pro.html">VFX Pro</a></li>
+                <li><a class="dropdown-item" href="../detail-courses-pages/graphics-design-pro.html">Graphics Design Pro</a></li>
+                <li><a class="dropdown-item" href="../detail-courses-pages/editing-pro.html">Editing Pro</a></li>
+                <li><a class="dropdown-item" href="../detail-courses-pages/2danimation-pro-.html">2d Animation pro</a></li>
+                <li><a class="dropdown-item" href="../detail-courses-pages/ai-pro.html">Ai Pro</a></li>
+                <li><a class="dropdown-item" href="../detail-courses-pages/animation-pro.html">Animation Pro</a></li>
+              </ul>
+            </li>
+  
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-light" href="../index.html#awards">Awards</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="../index.html#our-works">Our Works</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="../index.html#partners">Partners</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="../index.html#about-us">About Us</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="../index.html#why-toads">Why Toads</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="../index.html#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  
+    <!-- Main Content -->
+    <div class="container main-content">
+        <h1 class="text-center ">Animations Courses</h1>
+        <div class="row row-cols-1 row-cols-md-4 g-4 d-flex justify-content-center">
+            <div class="col">
+              <div class="card ">
+                <img src="../assets/courses/Animation_Prime.jpg" class="card-img-top"
+                alt="Hollywood Sign on The Hill"  style="height: 200px;"  />
+                <div class="card-body d-flex flex-column justify-content-between align-items-center">
+                  <h5 class="card-title text-accent">Animation Prime</h5>
+               <a href="/detail-courses-pages/animation-prime.html"><button class="custom-button">Apply Now</button></a> 
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card ">
+                <img src="../assets/courses/Animation_Elite.jpg" class="card-img-top"
+                alt="Hollywood Sign on The Hill"  style="height: 200px;"  />
+                           <div class="card-body d-flex flex-column justify-content-between align-items-center">
+                  <h5 class="card-title text-accent">Animation Elite</h5>
+                  <a href="/detail-courses-pages/animation-elite.html"><button class="custom-button">Apply Now</button></a> 
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card ">
+                <img src="../assets/courses/Animation_Gold.jpg" class="card-img-top"
+                alt="Hollywood Sign on The Hill"  style="height: 200px;"  />
+                           <div class="card-body d-flex flex-column justify-content-between align-items-center">
+                  <h5 class="card-title text-accent">Animation Gold</h5>
+                  <a href="/detail-courses-pages/animation-gold.html"><button class="custom-button">Apply Now</button></a> 
+                </div>
+              </div>
+            </div>
+ 
+          </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+             <!-- footer  -->
+<footer class="container-fluid footer">
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-md-6">
+          <a class="footer-logo" href="#">
+            <img src="../assets/logo/logo.jpg" alt="" class="img-fluid" />
+          </a>
+          <p class="fs-6 text-white">
+            Toads Academy, 101-107, First Floor, Kamla Arcade, Opp. Bal Gandharv Rang Mandir, Jangali Maharaj Road, Pune -411004
+          </p>
+          <p class="contact-info text-white fs-6">
+            <i class="bi bi-phone"></i> (+91) 8005400006 | (+91) 9145757500
+            <br />
+            <i class="bi bi-envelope"></i> toadsacademy@gmail.com
+          </p>
+  
+          <!-- Social Media Icons -->
+          <div class="social-icons mt-3 ">
+            <a href="https://www.facebook.com/share/15aXwDbz4G/" target="_blank" class="text-white me-3">
+              <i class="bi bi-facebook fs-4"></i>
+            </a>
+            <a href="https://www.instagram.com/toadspcmc/" target="_blank" class="text-white me-3">
+              <i class="bi bi-instagram fs-4"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/toads-academy/" target="_blank" class="text-white me-3">
+              <i class="bi bi-linkedin fs-4"></i>
+            </a>
+            <a href="https://www.youtube.com/@toadsIndia" target="_blank" class="text-white me-3">
+              <i class="bi bi-youtube fs-4"></i>
+            </a>
+            <!-- <a href="https://twitter.com/" target="_blank" class="text-white">
+              <i class="bi bi-twitter fs-4"></i>
+            </a> -->
+          </div>
+        </div>
+  
+        <div class="col-md-2">
+          <h5 class="text-accent fs-4 mb-2 link-title">Quick Links</h5>
+          <ul class="footer-links d-flex flex-column gap-1">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#our-works">Our Works</a></li>
+            <li><a href="../index.html#awards">Awards</a></li>
+            <li><a href="../index.html#our-course">Our Course</a></li>
+            <li><a href="../index.html#partners">Partners</a></li>
+            <li><a href="../index.html#about-us">About Us</a></li>
+            <li><a href="../index.html#why-toads">Why Toads</a></li>
+            <li><a href="../index.html#contact">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-2">
+          <h5 class="text-accent fs-4 mb-2 link-title">Courses</h5>
+          <ul class="footer-links d-flex flex-column gap-1">
+            <li><a href="#">Degree</a></li>
+            <li><a href="#">Animation</a></li>
+            <li><a href="#">VFX</a></li>
+            <li><a href="#">Graphics Design</a></li>
+            <li><a href="#">Gaming Course</a></li>
+            <li><a href="#">Short Term Courses</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-2">
+          <h5 class="text-accent fs-4 mb-2 link-title">More Links</h5>
+          <ul class="footer-links d-flex flex-column gap-1">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+              <!-- Scroll-to-Top Button -->
+              <button id="scrollToTopBtn" onclick="scrollToTop()">
+                <i class="bi bi-rocket-takeoff-fill"></i>
+              </button>
+            
+          
+          <!-- footer :Close -->
+  
+<script>
+  // navbar scroll effect
+window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    const firstSection = document.querySelector(".home-section") || document.querySelector("video"); 
+    const firstSectionHeight = firstSection ? firstSection.offsetHeight : 0;
+    
+    if (window.scrollY < firstSectionHeight) {
+        navbar.classList.remove("scrolled");
+        navbar.classList.add("transparent");
+    } else {
+        navbar.classList.remove("transparent");
+        navbar.classList.add("scrolled");
+    }
+});
+</script>
+
+</body>
+</html>

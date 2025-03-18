@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Prime</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap JS (Make sure it's included) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .bg-green-900 {
+            background-color: #004d00;
+        }
+        .bg-green-700 {
+            background-color: #006600;
+        }
+        .bg-green-100 {
+            background-color: #ccffcc;
+        }
+
+        .course-detail{
+        margin-top: 100px;
+        }
+
+        
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.transparent {
+    background-color: rgba(255, 255, 255, 0.1); /* Light opacity */
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 1); /* Darker opacity after scrolling */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  /* Enable dropdown submenus */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-top: -1px;
+    display: none;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
+@media (max-width: 991px) {
+    .navbar {
+      background-color: black !important;
+    }
+  }
+
+  .course-heading{
+    background-color: rgba(80, 80, 80, 0.7)
+  }
+
+  .card {
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .card-header {
+            background-color: #2c3e50;
+            color: white;
+            font-weight: 600;
+            padding: 15px 20px;
+            border-radius: 10px 10px 0 0 !important;
+        }
+        .card-body {
+            padding: 20px;
+            color: white;
+        }
+        .multi-column-list {
+            column-count: 2;
+            column-gap: 20px;
+            padding-left: 0;
+            list-style-position: inside;
+        }
+        @media (min-width: 992px) {
+            .multi-column-list {
+                column-count: 3;
+            }
+        }
+        .multi-column-list li {
+            break-inside: avoid;
+            padding: 5px 0;
+            list-style-type: none;
+        }
+        .footer-section {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+        .btn-outline-success {
+            border-color: #28a745;
+            color: #28a745;
+        }
+        .btn-outline-success:hover {
+            background-color: #28a745;
+            color: white;
+        }
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+.course-hero{
+  border-bottom: #16a34a 2px solid;
+  border-top: #16a34a 2px solid;
+
+}
+        
+
+    </style>
+</head>
+
+<body class="body-background">
+    <!-- Header -->
+  <!-- Navbar Links -->
+
+  <nav class="navbar navbar-expand-lg fixed-top ">
+    <!-- Brand Logo -->
+    <a class="navbar-brand" href="/index.html">
+      <img src="../assets/logo/logo.jpg" alt="Logo" class="logo" style="height: 60px;">
+    </a>
+  
+    <!-- Toggle Button for Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-light" href="/index.html">Home</a></li>
+  
+  
+        <!-- Courses Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Our Courses
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="../detail-courses-pages/bvoc.html
+              ">Degree</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../detail-courses-pages/bvoc.html
+                  ">
+                  B.voc in Graphics and Animation</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu ">
+              <a class="dropdown-item dropdown-toggle " href="#">Animation</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../detail-courses-pages/animation-prime.html">Animation Prime</a></li>
+                <li><a class="dropdown-item" href="../detail-courses-pages/animation-elite.html">Animation Elite</a></li>
+                <li><a class="dropdown-item" href="../detail-courses-pages/animation-gold.html">Animation Gold</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">VFX</a>
+              <ul class="dropdown-menu">
+  
+  
+                <li><a class="dropdown-item" href="../detail-courses-pages/vfx-prime.html">    VFX Prime</a></li>
+                <li><a class="dropdown-item" href="../detail-courses-pages/vfx-elite.html">          
+                  VFX Elite</a></li>
+                  <li><a class="dropdown-item" href="../detail-courses-pages/vfx-gold.html">          
+                    VFX Gold</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">Graphics Design</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../detail-courses-pages/ui-ux-prime.html">UI/UX Prime
+                </a></li>
+                <li><a class="dropdown-item" href="../detail-courses-pages/motion-graphic-prime.html">Motion Graphics Prime</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="">Gaming Course</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../detail-courses-pages/gaming-apex.html">Gaming Prime</a></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">Short Term Course</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../detail-courses-pages/vfx-pro.html">VFX Pro</a></li>
+                <li><a class="dropdown-item" href="../detail-courses-pages/graphics-design-pro.html">Graphics Design Pro</a></li>
+                <li><a class="dropdown-item" href="../detail-courses-pages/editing-pro.html">Editing Pro</a></li>
+                <li><a class="dropdown-item" href="../detail-courses-pages/2danimation-pro-.html">2d Animation pro</a></li>
+                <li><a class="dropdown-item" href="../detail-courses-pages/ai-pro.html">Ai Pro</a></li>
+                <li><a class="dropdown-item" href="../detail-courses-pages/animation-pro.html">Animation Pro</a></li>
+              </ul>
+            </li>
+  
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-light" href="../index.html#awards">Awards</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="../index.html#our-works">Our Works</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="../index.html#partners">Partners</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="../index.html#about-us">About Us</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="../index.html#why-toads">Why Toads</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="../index.html#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  
+    <!-- Main Content -->
+    <div class="course-detail ">
+        <section class="container text-center ">
+          <div class="course-heading p-4 bg-gradient-to-r from-green-50 to-green-100 rounded-lg shadow-md border-l-4 border-green-600 mb-5" style="position: relative; overflow: hidden;">
+            <!-- Corner decorations -->
+            <div style="position: absolute; top: 0; right: 0; width: 40px; height: 40px; background: linear-gradient(135deg, transparent 50%, rgba(34, 197, 94, 0.2) 50%);"></div>
+            <div style="position: absolute; bottom: 0; left: 0; width: 40px; height: 40px; background: linear-gradient(315deg, transparent 50%, rgba(34, 197, 94, 0.2) 50%);"></div>
+            
+            <!-- Corner dots -->
+            <div style="position: absolute; top: 10px; right: 10px; width: 8px; height: 8px; background-color: #16a34a; border-radius: 50%;"></div>
+            <div style="position: absolute; top: 25px; right: 25px; width: 5px; height: 5px; background-color: #16a34a; border-radius: 50%;"></div>
+            <div style="position: absolute; bottom: 10px; left: 10px; width: 8px; height: 8px; background-color: #16a34a; border-radius: 50%;"></div>
+            <div style="position: absolute; bottom: 25px; left: 25px; width: 5px; height: 5px; background-color: #16a34a; border-radius: 50%;"></div>
+            
+            <div class="flex items-center">
+              <div class="mr-4">
+                <span class="inline-block bg-green-600 p-3 rounded-full text-white" style="position: relative; z-index: 2; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-film">
+                    <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                    <line x1="7" y1="2" x2="7" y2="22"></line>
+                    <line x1="17" y1="2" x2="17" y2="22"></line>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <line x1="2" y1="7" x2="7" y2="7"></line>
+                    <line x1="2" y1="17" x2="7" y2="17"></line>
+                    <line x1="17" y1="17" x2="22" y2="17"></line>
+                    <line x1="17" y1="7" x2="22" y2="7"></line>
+                  </svg>
+                </span>
+              </div>
+              <div>
+                <span class="text-green-600 font-semibold text-sm uppercase tracking-wider">Professional Degree Program</span>
+                <h1 class="text-3xl font-bold text-green-900 mt-1">Animation Prime</h1>
+                <p class="text-green-700 mt-2">Transform your creative passion into professional expertise</p>
+              </div>
+            </div>
+            
+            <!-- Decorative corner border -->
+            <div style="position: absolute; top: 0; right: 0; width: 20px; height: 20px; border-top: 3px solid #16a34a; border-right: 3px solid #16a34a; border-top-right-radius: 4px;"></div>
+            <div style="position: absolute; bottom: 0; left: 0; width: 20px; height: 20px; border-bottom: 3px solid #16a34a; border-left: 3px solid #16a34a; border-bottom-left-radius: 4px;"></div>
+          </div>
+            <div class="row  mt-5  course-hero">
+              <div class="col-md-6">
+                <img src="../assets/courses/Animation_Prime.jpg" alt="Graphics and Animation Image" class="img-fluid my-4 w-100 " style="max-height: 500px;">
+              </div>
+              <div class="course-desc col-md-6  d-flex justify-content-center align-items-center ">
+            <p class="text-accent fs-6">
+              The Animation Prime course at Toads provides a comprehensive training experience covering every stage of animation filmmaking—from pre-production to production and post-production. You’ll gain hands-on expertise with the latest animation software, mastering the tools and workflows that define modern animation production.
+
+This course is perfect for aspiring animators looking to deepen their knowledge and skills. Under the guidance of expert mentors and industry professionals, you’ll learn key aspects of animation, including cinematography, video editing, story boarding, 3D design,Character Setup, and Animation, AI
+
+By the time you complete the program, you’ll be a job-ready professional, equipped to work in top animation studios, graphic design agencies, film production companies, and gaming studios. Whether you're aiming to work on films, games, or digital media, this course prepares you to make a mark in the world of animation and motion graphics.
+            </p>
+            </div>
+          </div>
+        </section>
+        <section class="container row text-center my-4 gap-2 d-flex justify-content-center">
+          <div class="col-md-2 col-sm-12 ">
+              <div class="course-heading  p-4 rounded">
+                  <h2 class="heading-3">Degree</h2>
+                  <p class="fs-6">Diploma</p>
+              </div>
+          </div>
+          <div class="col-md-2 col-sm-12 ">
+                <div class="course-heading  p-4 rounded">
+                  <h2 class="heading-3">Duration</h2>
+                  <p class="fs-6">24 Months</p>
+              </div>
+          </div>
+          <div class="col-md-2 col-sm-12 ">
+                 <div class="course-heading  p-4 rounded">
+                  <h2 class="heading-3">Eligibility</h2>
+                  <p class="fs-6">10th</p>
+              </div>
+          </div>
+          <div class="col-md-2 col-sm-12 ">
+            <div class="course-heading  p-4 rounded">
+             <h2 class="heading-3">Software</h2>
+             <p class="fs-6">15</p>
+         </div>
+     </div>
+      </section>
+        <section class=" container text-center my-4">
+            <h2 class="heading-2 text-accent mt-5">Software Covered</h2>
+            <div class="row row-cols-2 row-cols-md-6 g-4 my-4">
+                <div class="col">
+                    <div class="course-heading p-4 rounded shadow">
+                        <img src="../assets/bvoc/ps.webp" alt="Adobe Photoshop Logo" class="img-fluid mx-auto d-block" height="100">
+                        <p class="fs-6 mt-2">Adobe Photoshop</p>
+                    </div>
+                </div>
+        <div class="col">
+                <div class="course-heading p-4 rounded shadow">
+                    <img src="../assets/bvoc/adobe-illustrator.webp" alt="Adobe Photoshop Logo" class="img-fluid mx-auto d-block" height="100">
+                    <p class="fs-6 mt-2">Adobe Illustrator</p>
+                </div>
+            </div>     <div class="col">
+              <div class="course-heading p-4 rounded shadow">
+                  <img src="../assets/bvoc/after-effect.webp" alt="Adobe Photoshop Logo" class="img-fluid mx-auto d-block" height="100">
+                  <p class="fs-6 mt-2">Adobe After Effect</p>
+              </div>
+          </div>     <div class="col">
+            <div class="course-heading p-4 rounded shadow">
+                <img src="../assets/bvoc/premuim-pro.webp" alt="Adobe Photoshop Logo" class="img-fluid mx-auto d-block" height="100">
+                <p class="fs-6 mt-2">Adobe Premiere Pro</p>
+            </div>
+        </div>     <div class="col">
+          <div class="course-heading p-4 rounded shadow">
+              <img src="../assets/bvoc/audition.webp" alt="Adobe Photoshop Logo" class="img-fluid mx-auto d-block" height="100">
+              <p class="fs-6 mt-2">Adobe Audition</p>
+          </div>
+      </div>     <div class="col">
+        <div class="course-heading p-4 rounded shadow">
+            <img src="../assets/bvoc/marvel.png" alt="Adobe Photoshop Logo" class="img-fluid mx-auto d-block" height="100">
+            <p class="fs-6 mt-2">Marvelous Designer</p>
+        </div>
+    </div>    
+       <div class="col">
+  <div class="course-heading p-4 rounded shadow">
+      <img src="../assets/bvoc/blender.webp" alt="Adobe Photoshop Logo" class="img-fluid mx-auto d-block" height="100">
+      <p class="fs-6 mt-2">Blender</p>
+  </div>
+</div>     <div class="col">
+  <div class="course-heading p-4 rounded shadow">
+      <img src="../assets/bvoc/maya.webp" alt="Adobe Photoshop Logo" class="img-fluid mx-auto d-block" height="100">
+      <p class="fs-6 mt-2">Maya</p>
+  </div>
+</div>     <div class="col">
+  <div class="course-heading p-4 rounded shadow">
+      <img src="../assets/bvoc/3d-painter.webp" alt="Adobe Photoshop Logo" class="img-fluid mx-auto d-block" height="100">
+      <p class="fs-6 mt-2">Substance 3D Painte</p>
+  </div>
+</div>     <div class="col">
+  <div class="course-heading p-4 rounded shadow">
+      <img src="../assets/bvoc/z-brush.webp" alt="Adobe Photoshop Logo" class="img-fluid mx-auto d-block" height="100">
+      <p class="fs-6 mt-2">Z Brush</p>
+  </div>
+</div>     <div class="col">
+  <div class="course-heading p-4 rounded shadow">
+      <img src="../assets/bvoc/unreal.webp" alt="Adobe Photoshop Logo" class="img-fluid mx-auto d-block" height="100">
+      <p class="fs-6 mt-2">Unreal</p>
+  </div>
+</div>            <div class="col">
+  <div class="course-heading p-4 rounded shadow">
+      <img src="../assets/bvoc/chatgpt.jpeg" alt="Adobe Photoshop Logo" class="img-fluid mx-auto d-block" height="100">
+      <p class="fs-6 mt-2">Chat GPT</p>
+  </div>
+</div>     <div class="col">
+  <div class="course-heading p-4 rounded shadow">
+      <img src="../assets/bvoc/runway.jpeg" alt="Adobe Photoshop Logo" class="img-fluid mx-auto d-block" height="100">
+      <p class="fs-6 mt-2">Runway</p>
+  </div>
+</div>
+<div class="col">
+  <div class="course-heading p-4 rounded shadow">
+      <img src="../assets/bvoc/stable-diffusion.jpeg" alt="Adobe Photoshop Logo" class="img-fluid mx-auto d-block" height="100">
+      <p class="fs-6 mt-2">Stable Diffusion</p>
+  </div>
+</div>
+<div class="col">
+  <div class="course-heading p-4 rounded shadow">
+      <img src="../assets/bvoc/leonardo-ai.jfif" alt="Adobe Photoshop Logo" class="img-fluid mx-auto d-block" height="100">
+      <p class="fs-6 mt-2">leonardo AI</p>
+  </div>
+</div>
+         
+<div class="col">
+  <div class="course-heading p-4 rounded shadow">
+      <img src="../assets/bvoc/rnold.png" alt="Adobe Photoshop Logo" class="img-fluid mx-auto d-block" height="100">
+      <p class="fs-6 mt-2">Arnold</p>
+  </div>
+</div>
+         
+         
+                   
+            </div>
+        </section>
+  <!-- Header Section -->
+
+
+    <!-- Main Content -->
+    <div class="container my-5">
+      <div class="row mb-4">
+          <div class="col-12 text-center">
+              <h2 class="fw-bold mb-4">Launch Your Creative Career</h2>
+              <p class="lead text-accent mb-5">Master industry-standard tools and techniques with our specialized training programs</p>
+          </div>
+      </div>
+      
+      <div class="row g-4">
+          <!-- Career Options Card -->
+          <div class="col-md-6">
+              <div class="card shadow h-100">
+                  <div class="card-header">
+                      <h3 class="h4 mb-0">CAREER OPTIONS</h3>
+                  </div>
+                  <div class="card-body">
+                    <ul class="multi-column-list">
+                      <li>FX Artist</li>
+                      <li>Match Moving Artist</li>
+                      <li>Modelling Artist</li>
+                      <li>Lighting Artist</li>
+                      <li>Rigging Artist</li>
+                      <li>Texture Artist</li>
+                      <li>Render Artist</li>
+                      <li>3D Generalist</li>
+                      <li>Game Designer</li>
+                      <li>Graphic Designer</li>
+                      <li>3D Modelling Artist</li>
+                      <li>2D Motion Graphic Artist</li>
+                      <li>Pre-Production Artist</li>
+                      <li>Instructor</li>
+                      <li>Gen AI Artist</li>
+                      <li>Matte Painter</li>
+                      <li>Video Editor</li>
+                      <li>Pre-Viz Artist</li>
+                      <li>Animator</li>
+                      <li>Layout Artist</li>
+                      <li>Digital Sculptor</li>
+                      <li>Digital Designer</li>
+                      <li>Content Designer</li>
+                      <li>Content Creator</li>
+                  </ul>
+                  
+                  </div>
+                  <div class="card-footer bg-white border-0 p-4">
+                      <button class="btn btn-outline-success w-100">Explore Career Paths</button>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Course Content Card -->
+          <div class="col-md-6">
+              <div class="card shadow h-100">
+                  <div class="card-header">
+                      <h3 class="h4 mb-0">COURSE CONTENT</h3>
+                  </div>
+                  <div class="card-body">
+                    <ul class="multi-column-list">
+                      <li>3D Lighting</li>
+                      <li>Character Setup</li>
+                      <li>Texturing</li>
+                      <li>Rendering</li>
+                      <li>Game Asset Creation</li>
+                      <li>3D Modelling</li>
+                      <li>Motion Graphic</li>
+                      <li>Pre Production</li>
+                      <li>Digital Design</li>
+                      <li>Virtual Production</li>
+                      <li>Level Designing</li>
+                      <li>Architectural Visualizer</li>
+                      <li>Cinematic Designing</li>
+                      <li>Gen AI Tool</li>
+                      <li>Look Development</li>
+                      <li>Layer Based Compositing</li>
+                      <li>Lighting and Rendering</li>
+                      <li>Texturing | Lighting</li>
+                      <li>Character Setup</li>
+                      <li>3D Animation</li>
+                      <li>Digital Sculpting</li>
+                      <li>Character Setup & Rigging</li>
+                      <li>Particle & Dynamics</li>
+                      <li>3D Character Development</li>
+                      <li>Matte Painting</li>
+                      <li>Node Based Compositing</li>
+                      <li>Fluid, Hair & Cloth FX</li>
+                  </ul>
+                  
+                  </div>
+                  <div class="card-footer bg-white border-0 p-4">
+                      <button class="btn btn-outline-success w-100">View Full Curriculum</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Call to Action -->
+      <div class="row mt-5 ">
+          <div class="col-12 text-center ">
+              <div class="p-5  rounded shadow course-heading">
+                  <h3>Ready to Master Digital Arts & VFX?</h3>
+                  <p class="lead mb-4">Join our community of industry professionals and start creating tomorrow's visual experiences</p>
+                  <button class="btn btn-success px-5 py-3">Enroll Today</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    </div>
+    <!-- Footer -->
+             <!-- footer  -->
+<footer class="container-fluid footer">
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-md-6">
+          <a class="footer-logo" href="#">
+            <img src="../assets/logo/logo.jpg" alt="" class="img-fluid" />
+          </a>
+          <p class="fs-6 text-white">
+            Toads Academy, 101-107, First Floor, Kamla Arcade, Opp. Bal Gandharv Rang Mandir, Jangali Maharaj Road, Pune -411004
+          </p>
+          <p class="contact-info text-white fs-6">
+            <i class="bi bi-phone"></i> (+91) 8005400006 | (+91) 9145757500
+            <br />
+            <i class="bi bi-envelope"></i> toadsacademy@gmail.com
+          </p>
+  
+          <!-- Social Media Icons -->
+          <div class="social-icons mt-3 ">
+            <a href="https://www.facebook.com/share/15aXwDbz4G/" target="_blank" class="text-white me-3">
+              <i class="bi bi-facebook fs-4"></i>
+            </a>
+            <a href="https://www.instagram.com/toadspcmc/" target="_blank" class="text-white me-3">
+              <i class="bi bi-instagram fs-4"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/toads-academy/" target="_blank" class="text-white me-3">
+              <i class="bi bi-linkedin fs-4"></i>
+            </a>
+            <a href="https://www.youtube.com/@toadsIndia" target="_blank" class="text-white me-3">
+              <i class="bi bi-youtube fs-4"></i>
+            </a>
+            <!-- <a href="https://twitter.com/" target="_blank" class="text-white">
+              <i class="bi bi-twitter fs-4"></i>
+            </a> -->
+          </div>
+        </div>
+  
+        <div class="col-md-2">
+          <h5 class="text-accent fs-4 mb-2 link-title">Quick Links</h5>
+          <ul class="footer-links d-flex flex-column gap-1">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#our-works">Our Works</a></li>
+            <li><a href="../index.html#awards">Awards</a></li>
+            <li><a href="../index.html#our-course">Our Course</a></li>
+            <li><a href="../index.html#partners">Partners</a></li>
+            <li><a href="../index.html#about-us">About Us</a></li>
+            <li><a href="../index.html#why-toads">Why Toads</a></li>
+            <li><a href="../index.html#contact">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-2">
+          <h5 class="text-accent fs-4 mb-2 link-title">Courses</h5>
+          <ul class="footer-links d-flex flex-column gap-1">
+            <li><a href="#">Degree</a></li>
+            <li><a href="#">Animation</a></li>
+            <li><a href="#">VFX</a></li>
+            <li><a href="#">Graphics Design</a></li>
+            <li><a href="#">Gaming Course</a></li>
+            <li><a href="#">Short Term Courses</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-2">
+          <h5 class="text-accent fs-4 mb-2 link-title">More Links</h5>
+          <ul class="footer-links d-flex flex-column gap-1">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+              <!-- Scroll-to-Top Button -->
+              <button id="scrollToTopBtn" onclick="scrollToTop()">
+                <i class="bi bi-rocket-takeoff-fill"></i>
+              </button>
+            
+          
+          <!-- footer :Close -->
+  
+<script>
+  // navbar scroll effect
+window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    const firstSection = document.querySelector(".home-section") || document.querySelector("video"); 
+    const firstSectionHeight = firstSection ? firstSection.offsetHeight : 0;
+    
+    if (window.scrollY < firstSectionHeight) {
+        navbar.classList.remove("scrolled");
+        navbar.classList.add("transparent");
+    } else {
+        navbar.classList.remove("transparent");
+        navbar.classList.add("scrolled");
+    }
+});
+</script>
+
+</body>
+</html>

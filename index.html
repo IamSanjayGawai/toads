@@ -30,10 +30,10 @@
   </head>
 
   <body class="body-background">
-    <img src="assets/cursors/frog-cursor.png" class="frog-cursor">
+    <!-- <img src="assets/cursors/frog-cursor.png" class="frog-cursor"> -->
 
         <!-- header nav closed -->
-        <div class="wrapper container-fluid"> 
+
       
           
 <!-- Navbar -->
@@ -63,18 +63,20 @@
         </a>
         <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
           <li class="dropdown-submenu">
-            <a class="dropdown-item dropdown-toggle" href="#">Degree</a>
+            <a class="dropdown-item dropdown-toggle" href="../detail-courses-pages/bvoc.html
+            ">Degree</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">
+              <li><a class="dropdown-item" href="../detail-courses-pages/bvoc.html
+                ">
                 B.voc in Graphics and Animation</a></li>
             </ul>
           </li>
           <li class="dropdown-submenu ">
             <a class="dropdown-item dropdown-toggle " href="#">Animation</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Animation Prime</a></li>
-              <li><a class="dropdown-item" href="#">Animation Elite</a></li>
-              <li><a class="dropdown-item" href="#">Animation Gold</a></li>
+              <li><a class="dropdown-item" href="../detail-courses-pages/animation-prime.html">Animation Prime</a></li>
+              <li><a class="dropdown-item" href="../detail-courses-pages/animation-elite.html">Animation Elite</a></li>
+              <li><a class="dropdown-item" href="../detail-courses-pages/animation-gold.html">Animation Gold</a></li>
             </ul>
           </li>
           <li class="dropdown-submenu">
@@ -82,37 +84,37 @@
             <ul class="dropdown-menu">
 
 
-              <li><a class="dropdown-item" href="#">    VFX Prime</a></li>
-              <li><a class="dropdown-item" href="#">          
+              <li><a class="dropdown-item" href="../detail-courses-pages/vfx-prime.html">    VFX Prime</a></li>
+              <li><a class="dropdown-item" href="../detail-courses-pages/vfx-elite.html">          
                 VFX Elite</a></li>
-                <li><a class="dropdown-item" href="#">          
+                <li><a class="dropdown-item" href="../detail-courses-pages/vfx-gold.html">          
                   VFX Gold</a></li>
             </ul>
           </li>
           <li class="dropdown-submenu">
             <a class="dropdown-item dropdown-toggle" href="#">Graphics Design</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">UI/UX Prime
+              <li><a class="dropdown-item" href="../detail-courses-pages/ui-ux-prime.html">UI/UX Prime
               </a></li>
-              <li><a class="dropdown-item" href="#">Motion Graphics Prime</a></li>
+              <li><a class="dropdown-item" href="../detail-courses-pages/motion-graphic-prime.html">Motion Graphics Prime</a></li>
             </ul>
           </li>
           <li class="dropdown-submenu">
-            <a class="dropdown-item dropdown-toggle" href="#">Gaming Course</a>
+            <a class="dropdown-item dropdown-toggle" href="">Gaming Course</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Motion Graphics Prime</a></li>
+              <li><a class="dropdown-item" href="../detail-courses-pages/gaming-apex.html">Gaming Prime</a></li>
               
             </ul>
           </li>
           <li class="dropdown-submenu">
             <a class="dropdown-item dropdown-toggle" href="#">Short Term Course</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">VFX Pro</a></li>
-              <li><a class="dropdown-item" href="#">Graphics Design Pro</a></li>
-              <li><a class="dropdown-item" href="#">Editing Pro</a></li>
-              <li><a class="dropdown-item" href="#">2d Animation pro</a></li>
-              <li><a class="dropdown-item" href="#">Ai Pro</a></li>
-              <li><a class="dropdown-item" href="#">Animation Pro</a></li>
+              <li><a class="dropdown-item" href="../detail-courses-pages/vfx-pro.html">VFX Pro</a></li>
+              <li><a class="dropdown-item" href="../detail-courses-pages/graphics-design-pro.html">Graphics Design Pro</a></li>
+              <li><a class="dropdown-item" href="../detail-courses-pages/editing-pro.html">Editing Pro</a></li>
+              <li><a class="dropdown-item" href="../detail-courses-pages/2danimation-pro-.html">2d Animation pro</a></li>
+              <li><a class="dropdown-item" href="../detail-courses-pages/ai-pro.html">Ai Pro</a></li>
+              <li><a class="dropdown-item" href="../detail-courses-pages/animation-pro.html">Animation Pro</a></li>
             </ul>
           </li>
 
@@ -142,40 +144,41 @@
 
   <!-- Content -->
   <div class="content">
-      <h1 class="heading-1">India’s 1ˢᵗ Generative </h1>
-      <h1 class="heading-1 text-accent">AI Academy</h1>
+      <h1 class="heading-1 left-part">India’s 1ˢᵗ Generative </h1>
+      <h1 class="text-gradient text-glow display-3 heading-1 right-part mb-3">AI ACADEMY</h1>
       <button class="custom-button apply-btn">Apply Now</button>
   </div>
 
 <!-- Scooter Image Container -->
-<div class="scooter-container">
+<!-- <div class="scooter-container">
   <img src="assets/placement_logos/scooter.jpg" alt="Scooter" class="scooter-image">
-</div>
+</div> -->
 
 
   <!-- Sliding Form (INSIDE HERO SECTION) -->
   <div class="form-container" id="applyForm">
       <button class="close-btn text-success" onclick="toggleForm()">×</button>
-      <h2 class="heading-2 text-accent">Apply Now</h2>
-      <form>
+      <h2 class="heading-3 text-accent">Apply Now</h2>
+      <form id="contactForm1">
           <div class="mb-3 d-flex flex-column justify-content-flex-start align-items-start">
-              <label class="form-label">First Name</label>
-              <input type="text" class="form-control" placeholder="Enter your name">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" id="firstName" class="form-control" placeholder="Enter your name" required>
           </div>
           <div class="mb-3 d-flex flex-column justify-content-flex-start align-items-start">
-            <label class="form-label">Last Name</label>
-            <input type="text" class="form-control" placeholder="Enter your name">
+            <label  for="lastName" class="form-label">Last Name</label>
+            <input type="text" id="lastName" class="form-control" placeholder="Enter your name" required>
         </div>
           <div class="mb-3 d-flex flex-column justify-content-flex-start align-items-start">
-              <label class="form-label">Email</label>
-              <input type="email" class="form-control" placeholder="Enter your email">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email"  class="form-control" placeholder="Enter your email" required>
           </div>
           <div class="mb-3 d-flex flex-column justify-content-flex-start align-items-start">
-              <label class="form-label">Phone</label>
-              <input type="tel" class="form-control" placeholder="Enter your phone">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="tel" id="phone" class="form-control" placeholder="Enter your phone" required>
           </div>
           <button type="submit" class="submit-btn w-100">Submit</button>
       </form>
+      <p id="statusMessage1" class="mt-3"></p>
   </div>
 
 
@@ -233,7 +236,7 @@
             <div class="course-card" style="background-image: url('./assets/courses/b.vox.jpg');">
                 <div class="course-content">
                     <h4>Degree</h4>
-                    <button class="course-button">Read More</button>
+                  <a href="./courses-types/degree.html"><button class="course-button">Read More</button></a>  
                 </div>
             </div>   
         </div>
@@ -242,7 +245,7 @@
             <div class="course-card" style="background-image: url('./assets/courses/Animation_Gold.jpg');">
                 <div class="course-content">
                     <h4>Animation</h4>
-                    <button class="course-button">Read More</button>
+                    <a href="./courses-types/animation.html"><button class="course-button">Read More</button></a>  
                 </div>
             </div>
         </div>
@@ -251,7 +254,7 @@
             <div class="course-card" style="background-image: url('./assets/courses/vfx_Elite.jpg');">
                 <div class="course-content">
                     <h4>VFX</h4>
-                    <button class="course-button">Read More</button>
+                    <a href="./courses-types/vfx.html"><button class="course-button">Read More</button></a>  
                 </div>
             </div>
         </div>
@@ -260,7 +263,7 @@
             <div class="course-card" style="background-image: url('./assets/courses/graphic.jpg');">
                 <div class="course-content">
                     <h4>Graphics Design</h4>
-                    <button class="course-button">Read More</button>
+                    <a href="./courses-types/graphics-design.html"><button class="course-button">Read More</button></a>  
                 </div>
             </div>
         </div>
@@ -269,7 +272,7 @@
             <div class="course-card" style="background-image: url('./assets/courses/Gaming.jpg');">
                 <div class="course-content">
                     <h4>Gaming Course</h4>
-                    <button class="course-button">Read More</button>
+                    <a href="./courses-types/gaming-course.html"><button class="course-button">Read More</button></a>  
                 </div>
             </div>
         </div>
@@ -278,7 +281,7 @@
             <div class="course-card" style="background-image: url('./assets/courses/Design_shotturm_COURSE.jpg');">
                 <div class="course-content">
                     <h4>Short Term Courses</h4>
-                    <button class="course-button">Read More</button>
+                    <a href="./courses-types/short-term-course.html"><button class="course-button">Read More</button></a>  
                 </div>
             </div>
         </div>
@@ -294,9 +297,20 @@
           <h2 class="heading-2 mb-2 text-accent hidden">
             Multi Award Winner Studio's Academy
           </h2>
-          <p class="mb-5 text-accent fs-6">
+          <div class=" d-flex flex-column">
 
-          </p>
+
+          <span class="fs-1"> "The Beginning"</span> 
+          <span class="fs-3">"Give them quality. That the best kind of advertising."</span>
+          <span> Best Visual Effects NAZAR The 18th ITA Awards 2018</span>
+          <span>Best Visual Effects YEHH JAADU HEIN JINN KA The 21th ITA Awards 2021</span>
+          <span>Best Visual Effects PISHACHINI The 23rd ITA Awards 2023</span>  
+           
+            
+            
+            
+            
+          </div>
           <div class="row justify-content-center hidden">
             <div class="col-md-4 mb-4">
               <div class="award-image">
@@ -308,30 +322,15 @@
               <div class="row awards-list-img ">
                 <div class="col-md-12 mb-4 d-flex flex-column justify-content-center align-items-center">
                   <img src="assets/award/NAZAR .png" alt="Best Visual Effects NAZAR" class="img-fluid mb-2">
-                  <span class=" text-accent fs-6">
-                    Best Visual Effects NAZAR
-                  </span>
-                  <span class="text-accent fs-6">
-                    The 18rd ITA Awards 2018
-                  </span>
+            
                 </div>
                 <div class="col-md-6 mb-4 d-flex flex-column justify-content-center align-items-center">
                   <img src="assets/award/YA JADU HAI JINN KA.png" alt="Best Visual Effects NAZAR" class="img-fluid mb-2">
-                  <span class=" text-accent fs-6">
-                    Best Visual Effects YA JADU HAI JINN KA
-                  </span>
-                  <span class="text-accent fs-6">
-                    The 21rd ITA Awards 2021
-                  </span>
+               
                 </div>
                 <div class="col-md-6 mb-4 d-flex flex-column justify-content-center align-items-center">
                   <img src="assets/award/PISHACHINI.png" alt="Best Visual Effects NAZAR" class="img-fluid mb-2">
-                  <span class=" text-accent fs-6">
-                    Best Visual Effects PISHACHINI
-                  </span>
-                  <span class="text-accent fs-6">
-                    The 23rd ITA Awards 2023
-                  </span>
+            
               
                 </div>
                
@@ -347,8 +346,11 @@
     <div class="work-up text-center mb-4">
       <h2 class="heading-2 text-accent">Our Works</h2>
     </div>
-    <h2 class="heading-3 text-accent">
+    <div class="d-flex justify-content-between align-items-center px-4 mb-2" >
+    <h2 class="heading-3 text-accent mb-0">
        Movies <span class="text-theme">&#10148;</span></h2>
+       <a href="./poster-all/movie-poster.html"> <button class="btn btn-success">View All</button>  </a>
+    </div>
   
     <!-- Swiper Slider -->
     <div class="swiper mySwiper">
@@ -383,6 +385,37 @@
             <img src="assets/movies/Pushpa 2.jpg" class="poster-img-top" alt="Movie 6">
           </div>
         </div>
+
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/movies/Sonic.jpg" class="poster-img-top" alt="Movie 7">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/movies/Tanaji.jpg" class="poster-img-top" alt="Movie 9">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/movies/Tejas.jpg" class="poster-img-top" alt="Movie 10">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/movies/The new Avangers.jpg" class="poster-img-top" alt="Movie 11">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/movies/Zara Hatke Zara Bachke.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/movies/Zombivli.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div> 
      
       </div>
       
@@ -394,55 +427,11 @@
   
 
   <div class="work-section mb-5 mt-5 w-100 " id="our-works">
-
-    <h2 class="heading-3 text-accent">Serials <span class="text-theme">&#10148;</span></h2>
-    <!-- Swiper Slider -->
-    <div class="swiper mySwiper1">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/Akbar Birbal.jpg" class="poster-img-top" alt="Movie 1">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/jadu teri nazar.png" class="poster-img-top" alt="Movie 2">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/Nazar.jpg" class="poster-img-top" alt="Movie 3">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/Chandradev.jpg" class="poster-img-top" alt="Movie 4">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/Pishachini.jpg" class="poster-img-top" alt="Movie 5">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/Fanaa Ishq Marjawan.jpg" class="poster-img-top" alt="Movie 6">
-          </div>
-        </div>
-      
+   <div class="d-flex justify-content-between align-items-center px-4 mb-2" >
+      <h2 class="heading-3 text-accent mb-0">
+        Web Series <span class="text-theme">&#10148;</span></h2>
+        <a href="./poster-all/web-series.html"><button class="btn btn-success">View All</button>  </a>
       </div>
-      
-      <!-- Pagination & Navigation -->
-      <div class="swiper-pagination"></div>
-
-    </div>
-  </div>
-
-  <div class="work-section mb-5 mt-5 w-100 " id="our-works">
-    <h2 class="heading-3 text-accent">
-      Web Series <span class="text-theme">&#10148;</span>
-    </h2>
-    
   
     <!-- Swiper Slider -->
     <div class="swiper mySwiper2">
@@ -477,6 +466,31 @@
             <img src="assets/web-series/Dharavi Bank.jpg" class="poster-img-top" alt="Movie 6">
           </div>
         </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Bekaboo.jpg" class="poster-img-top" alt="Movie 7">
+          </div>
+        </div>
+      <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Call My Agent.jpg" class="poster-img-top" alt="Movie 9">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Criminal Justice.jpg" class="poster-img-top" alt="Movie 10">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Dharavi Bank.jpg" class="poster-img-top" alt="Movie 11">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/web-series/Dil Logical.jpg" class="poster-img-top" alt="Movie 12">
+          </div>
+        </div>
 
       </div>
       
@@ -485,6 +499,78 @@
 
     </div>
   </div>
+
+  
+  <div class="work-section mb-5 mt-5 w-100 " id="our-works">
+
+   <div class="d-flex justify-content-between align-items-center px-4 mb-2" >
+      <h2 class="heading-3 text-accent mb-0">
+        Serials <span class="text-theme">&#10148;</span></h2>
+      <a href="./poster-all/serials.html"> <button class="btn btn-success">View All</button>  </a>
+      </div>
+    <!-- Swiper Slider -->
+    <div class="swiper mySwiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Akbar Birbal.jpg" class="poster-img-top" alt="Movie 1">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/jadu teri nazar.png" class="poster-img-top" alt="Movie 2">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Nazar.jpg" class="poster-img-top" alt="Movie 3">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Chandradev.jpg" class="poster-img-top" alt="Movie 4">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Pishachini.jpg" class="poster-img-top" alt="Movie 5">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Fanaa Ishq Marjawan.jpg" class="poster-img-top" alt="Movie 6">
+          </div>
+        </div>
+        
+
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Happy Ever After.jpg" class="poster-img-top" alt="Movie 7">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/Imali 2.jpg" class="poster-img-top" alt="Movie 9">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img src="assets/serials/imli.jpg" class="poster-img-top" alt="Movie 10">
+          </div>
+        </div> 
+
+
+   
+
+      
+      </div>
+      
+      <!-- Pagination & Navigation -->
+      <div class="swiper-pagination"></div>
+
+    </div>
+  </div>
+
   
   
     <!-- our work closed -->
@@ -501,16 +587,18 @@
     <button class="custom-button">READ MORE</button>
   </div>
 
-  <div class="partner-logos">
+  <div class="partner-logos ">
+    <img src="assets/brand/ISO LOGO PNG.png" alt="Unlimited Outdoor Adventures">
+    <img src="assets/brand/MESC Logo.jpg" alt="Hello Sunshine">
+    <img src="assets/brand/Skill India Logo.png" alt="Unlimited Outdoor Adventures">
+    <img src="assets/brand/NSDC Logo.png" alt="Unlimited Outdoor Adventures">
+
+    <img src="assets/brand/Sandip Uni Logo.png" alt="Unlimited Outdoor Adventures">
     <img src="assets/brand/CMIDS  Logo.jpg" alt="Classic Design Studio">
     <img src="assets/brand/Creative ant Logo.png" alt="Design Studio">
-    <img src="assets/brand/06.jpg" alt="Vintage Studio">
     <img src="assets/brand/Flying Toads Logo.png" alt="Your Coach">
-    <img src="assets/brand/MESC Logo.jpg" alt="Hello Sunshine">
-    <img src="assets/brand/NSDC Logo.png" alt="Unlimited Outdoor Adventures">
-    <img src="assets/brand/ISO LOGO PNG.png" alt="Unlimited Outdoor Adventures">
-    <img src="assets/brand/Sandip Uni Logo.png" alt="Unlimited Outdoor Adventures">
-    <img src="assets/brand/Skill India Logo.png" alt="Unlimited Outdoor Adventures">
+
+
   </div>
 </div>
 
@@ -728,11 +816,11 @@
          
           <img src="assets/placement_logos/Goledn Robotic.jpg" alt="Classic Design Studio" class="img-fluid mb-3">
          
-          <img src="assets/placement_logos/jungleegames.png" alt="Classic Design Studio" class="img-fluid mb-3">
+          <!-- <img src="assets/placement_logos/jungleegames.png" alt="Classic Design Studio" class="img-fluid mb-3"> -->
          
           <img src="assets/placement_logos/Lakshya Studio.png" alt="Classic Design Studio" class="img-fluid mb-3">
          
-          <img src="assets/placement_logos/makutavfx.png" alt="Classic Design Studio" class="img-fluid mb-3">
+          <!-- <img src="assets/placement_logos/makutavfx.png" alt="Classic Design Studio" class="img-fluid mb-3"> -->
          
           <img src="assets/placement_logos/Red Chillies.png" alt="Classic Design Studio" class="img-fluid mb-3">
          
@@ -771,38 +859,52 @@
 <div class=" clients-grid ">
   
   <!-- Streaming Platforms -->
-  
-    <img src="assets/trusted-clients/Netflix_Logo.png" alt="Netflix" class="client-logo">
+  <img src="assets/trusted-clients/Star Plus.png" alt="Star Plus" class="client-logo">
+  <img src="assets/trusted-clients/colorstv1.jpeg" alt="Voot" class="client-logo">
+  <img src="assets/trusted-clients/Life_OK.webp" alt="Doordarshan" class="client-logo">
+  <img src="assets/trusted-clients/BARC Logo.webp" alt="ICICI Lombard" class="client-logo">
+
+    <!-- Sony Network -->
+    <img src="assets/trusted-clients/Sony_Sab_new_logo.png" alt="Sony SAB" class="client-logo">
+    <img src="assets/trusted-clients/Sony Pal.png" alt="Sony Pal" class="client-logo">
+    <img src="assets/trusted-clients/Sony television.png" alt="Sony TV" class="client-logo">
+    <img src="assets/trusted-clients/Sonyliv.jpeg" alt="SonyLIV" class="client-logo">
  
+
+    <img src="assets/trusted-clients/&TV.webp" alt="Doordarshan" class="client-logo">
+    <img src="assets/trusted-clients/Tv_teresstrial_dd.webp" alt="Doordarshan" class="client-logo">
+    <img src="assets/trusted-clients/Z Anmo.webp" alt="Zee Anmol" class="client-logo">
+    <img src="assets/trusted-clients/Z Tev.webp" alt="Zee TV" class="client-logo">
+ 
+  
+
+          
+    <img src="assets/trusted-clients/Star_Utsav_2015.webp" alt="Star Utsav" class="client-logo">
+    <img src="assets/trusted-clients/rishtey.png" alt="Rishtey" class="client-logo">
+    <img src="assets/placement_logos/Zee5.svg" alt="Classic Design Studio" class="client-logo">
+<img src="assets/trusted-clients/Zee TV Logo.png" alt="Star Bharat" class="client-logo">
+
   
     <img src="assets/trusted-clients/Prime Video.png" alt="Prime Video" class="client-logo">
- 
-  
+    <img src="assets/trusted-clients/MX_Player_Logo.png" alt="MX Player" class="client-logo">
+    <!-- mini tv img -->
+    
     <img src="assets/trusted-clients/disney-hotstar-logo-png_seeklogo-427118.png" alt="Disney+ Hotstar" class="client-logo">
  
-  
-    <img src="assets/trusted-clients/MX_Player_Logo.png" alt="MX Player" class="client-logo">
+
+
+
+    <img src="assets/trusted-clients/Netflix_Logo.png" alt="Netflix" class="client-logo">
  
+ <!-- voot -->
+
   
     <img src="assets/trusted-clients/Altbalaji Logo.png" alt="AltBalaji" class="client-logo">
  
 
   
-  <!-- Sony Network -->
-  
-    <img src="assets/trusted-clients/Sony television.png" alt="Sony TV" class="client-logo">
- 
-  
-    <img src="assets/trusted-clients/Sony_Sab_new_logo.png" alt="Sony SAB" class="client-logo">
- 
-  
-    <img src="assets/trusted-clients/Sony Pal.png" alt="Sony Pal" class="client-logo">
- 
-  
-    <img src="assets/trusted-clients/Sonyliv.jpeg" alt="SonyLIV" class="client-logo">
- 
-  
-    <img src="assets/trusted-clients/colorstv1.jpeg" alt="Voot" class="client-logo">
+
+   
  
   
   <!-- Star Network -->
@@ -811,62 +913,16 @@
     <img src="assets/trusted-clients/download.png" alt="Zee5" class="client-logo">
  
   
-    <img src="assets/trusted-clients/Star Plus.png" alt="Star Plus" class="client-logo">
- 
-  
-    <img src="assets/trusted-clients/Star_Utsav_2015.webp" alt="Star Utsav" class="client-logo">
- 
-
-  
-  <!-- Zee Network -->
-  
-    <img src="assets/trusted-clients/Zee TV Logo.png" alt="Zee TV" class="client-logo">
- 
-  
-    <img src="assets/trusted-clients/Z Anmo.webp" alt="Zee Anmol" class="client-logo">
- 
-  
-  <!-- Colors Network -->
-  
-    <img src="assets/trusted-clients/rishtey.png" alt="Rishtey" class="client-logo">
- 
-  
-  <!-- Other TV Channels -->
-  
+    
     <img src="assets/trusted-clients/Dangaltv.png" alt="Dangal TV" class="client-logo">
- 
-  
-    <img src="assets/trusted-clients/Tv_teresstrial_dd.webp" alt="Doordarshan" class="client-logo">
- 
-  
-    <img src="assets/trusted-clients/&TV.webp" alt="Doordarshan" class="client-logo">
- 
-  
-  
-    <img src="assets/trusted-clients/Life_OK.webp" alt="Doordarshan" class="client-logo">
- 
-  
-  
+
     <img src="assets/trusted-clients/Shemaroo_Umang.png" alt="Shemaroo Umang" class="client-logo">
  
-  
-  <!-- Production Houses -->
-  
+    <img src="assets/trusted-clients/Banijay Asia Logo.jpg" alt="Banijay Asia" class="client-logo">
+    <img src="assets/trusted-clients/Baps Logo.png" alt="BAPS" class="client-logo">
+    <img src="assets/trusted-clients/ICICI Lambord Logo.png" alt="ICICI Lombard" class="client-logo">
     <img src="assets/trusted-clients/4 Lions Films Logo.jpg" alt="4 Lions Films" class="client-logo">
  
-  
-    <img src="assets/trusted-clients/Banijay Asia Logo.jpg" alt="Banijay Asia" class="client-logo">
- 
-  
-  <!-- Other Brands -->
-  
-    <img src="assets/trusted-clients/Baps Logo.png" alt="BAPS" class="client-logo">
- 
-  
-    <img src="assets/trusted-clients/ICICI Lambord Logo.png" alt="ICICI Lombard" class="client-logo">
- 
-  
-    <img src="assets/trusted-clients/BARC Logo.webp" alt="ICICI Lombard" class="client-logo">
  
   
 </div>
@@ -874,13 +930,98 @@
 </div>
 
 
+  <!-- Our work -->
+  <div class="student-work-section mb-5 mt-5   w-100 " id="student-works">
+    <div class="work-up text-center mb-4">
+      <h2 class="heading-2 text-accent">Our Students Credits</h2>
+    </div>
+    <div class="d-flex justify-content-between align-items-center px-2 mb-2" >
+    <h2 class="heading-3 text-accent mb-0">
+     
+     
+    </div>
+  
+    <!-- Swiper Slider -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="student-work">
+            <img src="assets/student-credits/Bharat.jpg" class="student-work-img-top" alt="Movie 1">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="student-work">
+            <img src="assets/student-credits/Tushar.jpg       " class="student-work-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="student-work">
+            <img src="assets/student-credits/Charan.jpg    " class="student-work-img-top" alt="Movie 3">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="student-work">
+            <img src="assets/student-credits/Ganesh.jpg        " class="student-work-img-top" alt="Movie 4">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="student-work">
+            <img src="assets/student-credits/Himanshu.jpg         " class="student-work-img-top" alt="Movie 5">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="student-work">
+            <img src="assets/student-credits/Nandu.jpg        " class="student-work-img-top" alt="Movie 6">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="student-work">
+            <img src="assets/student-credits/NIshatn.jpg        " class="student-work-img-top" alt="Movie 7">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="student-work">
+            <img src="assets/student-credits/Pradeep.jpg        " class="student-work-img-top" alt="Movie 9">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="student-work">
+            <img src="assets/student-credits/Rahul.jpg        " class="student-work-img-top" alt="Movie 10">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="student-work">
+            <img src="assets/student-credits/Ranjeet.jpg        " class="student-work-img-top" alt="Movie 11">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="student-work">
+            <img src="assets/student-credits/Sanket.jpg      " class="student-work-img-top" alt="Movie 12">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="student-work">
+            <img src="assets/student-credits/Shubhan.jpg       " class="student-work-img-top" alt="Movie 12">
+          </div>
+        </div> 
+     
+      </div>
+      
+      <!-- Pagination & Navigation -->
+      <div class="swiper-pagination"></div>
+
+    </div>
+  </div>
+
+
  <!-- Map Container -->
 <!-- Google Maps Embed -->
 <div class="container-fluid mb-5 map-section py-5" id="map">
-  <h2 class="heading-2 text-accent">Our Location</h2>
-  <p class="fs-5 mb-4 text-accent">Our experienced staff, combined with our global network, allow us to provide the
+  <h2 class="heading-2 text-accent text-center">Our Location</h2>
+  <p class="fs-5 mb-4 text-accent text-center">Our experienced staff, combined with our global network, allow us to provide the
     support you need</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121037.3702032496!2d73.65675709726561!3d18.555192699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf656b67eba9%3A0xef462a0b2a21b02d!2sTOADS%20ACADEMY!5e0!3m2!1sen!2sin!4v1741810314236!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5346.483193000729!2d73.79273863708278!3d18.63999495804724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9892aa001cb%3A0xac19278a1504cdab!2sToads%20Academy%20PCMC!5e0!3m2!1sen!2sin!4v1742116552452!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   
 
 </div>
@@ -907,7 +1048,7 @@
           <div class="card border-0">
             <div class="card-body p-5">
               <p class="fs-5 mb-4 text-accent">Let's talk about your career growth</p>
-              <form id="contactForm">
+              <form id="contactForm2">
                 <div class="row">
                   <div class="col-md-6 form-sect">
                     <label for="firstName" class="text-accent">First Name</label>
@@ -944,17 +1085,17 @@
 <footer class="container-fluid footer">
   <div class="container p-5">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 mb-4">
         <a class="footer-logo" href="#">
           <img src="assets/logo/logo.jpg" alt="" class="img-fluid" />
         </a>
         <p class="fs-6 text-white">
-          Toads Academy, 101-107, First Floor, Kamla Arcade, Opp. Bal Gandharv Rang Mandir, Jangali Maharaj Road, Pune -411004
+          4th floor, Office, Kunal Plaza, 56/57, Old Mumbai Rd, near Chinchwad Station Road, Chinchwad, Pune, Maharashtra - 411019
         </p>
         <p class="contact-info text-white fs-6">
           <i class="bi bi-phone"></i> (+91) 8005400006 | (+91) 9145757500
           <br />
-          <i class="bi bi-envelope"></i> toadsacademy@gmail.com
+          <i class="bi bi-envelope"></i> toadpcmc@gmail.com
         </p>
 
         <!-- Social Media Icons -->
@@ -977,7 +1118,7 @@
         </div>
       </div>
 
-      <div class="col-md-2">
+      <div class="col-md-2  mb-3">
         <h5 class="text-accent fs-4 mb-2 link-title">Quick Links</h5>
         <ul class="footer-links d-flex flex-column gap-1">
           <li><a href="#">Home</a></li>
@@ -991,7 +1132,7 @@
         </ul>
       </div>
 
-      <div class="col-md-2">
+      <div class="col-md-2 mb-3">
         <h5 class="text-accent fs-4 mb-2 link-title">Courses</h5>
         <ul class="footer-links d-flex flex-column gap-1">
           <li><a href="#">Degree</a></li>
@@ -1033,6 +1174,7 @@
 <!-- our worl slider js swiper -->
  <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
 
 
@@ -1248,7 +1390,7 @@ window.addEventListener("scroll", function () {
 
 
 // contact form working 
-document.getElementById("contactForm").addEventListener("submit", async (e) => {
+document.getElementById("contactForm2").addEventListener("submit", async (e) => {
     e.preventDefault(); // Prevent page reload
 
     const statusMessage = document.getElementById("statusMessage");
@@ -1277,6 +1419,37 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
         statusMessage.style.color = "red";
     }
 });
+
+document.getElementById("contactForm1").addEventListener("submit", async (e) => {
+    e.preventDefault(); // Prevent page reload
+
+    const statusMessage = document.getElementById("statusMessage1");
+    statusMessage.innerText = "Submitting...";
+    statusMessage.style.color = "blue";
+
+    const formData = {
+        firstName: document.getElementById("firstName").value,
+        lastName: document.getElementById("lastName").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+    };
+
+    try {
+        const response = await fetch("http://localhost:5000/send-email", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData),
+        });
+
+        const data = await response.json();
+        statusMessage.innerText = data.message;
+        statusMessage.style.color = "green";
+    } catch (error) {
+        statusMessage.innerText = "Error sending message!";
+        statusMessage.style.color = "red";
+    }
+});
+
 
 
 // Scroll to top 
@@ -1386,41 +1559,63 @@ var swiper = new Swiper(".mySwiper2", {
 
 
 // toggle form
+// Toggle form
 let formTimer;
 let manualOpen = false; // Tracks if the form was manually opened
+let isHoveringForm = false; // Tracks if the user is hovering over the form
 
 function toggleForm(forceClose = false) {
     const form = document.getElementById('applyForm');
     const applyBtn = document.querySelector('.apply-btn');
-    const scooterImg = document.querySelector('.scooter-container'); // Select scooter image
 
-    if (forceClose) {
+    if (forceClose && !manualOpen && !isHoveringForm) {
         form.classList.remove('show');
-        scooterImg.classList.remove('show'); // Hide scooter image
         applyBtn.style.display = 'block';
-        manualOpen = false;
         return;
     }
 
     form.classList.toggle('show');
-    scooterImg.classList.toggle('show'); // Toggle scooter image
 
     if (form.classList.contains('show')) {
         applyBtn.style.display = 'none';
-        manualOpen = true;
+        manualOpen = true; // Mark manual opening
 
-        // Close form and hide scooter after 10 seconds
-        clearTimeout(formTimer);
-        formTimer = setTimeout(() => {
-            toggleForm(true);
-        }, 10000);
+        // Auto-close only if it was not manually opened and not hovered
+        if (!manualOpen && !isHoveringForm) {
+            clearTimeout(formTimer);
+            formTimer = setTimeout(() => {
+                toggleForm(true);
+            }, 10000);
+        }
     } else {
         applyBtn.style.display = 'block';
         manualOpen = false;
     }
 }
 
-// Auto-open form & scooter on page load for 5 seconds
+// Prevent auto-closing when clicking inside the form
+document.getElementById('applyForm').addEventListener('click', () => {
+    manualOpen = true;
+});
+
+// Prevent closing while hovering over the form
+document.getElementById('applyForm').addEventListener('mouseenter', () => {
+    isHoveringForm = true;
+    clearTimeout(formTimer); // Stop auto-close while hovering
+});
+
+document.getElementById('applyForm').addEventListener('mouseleave', () => {
+    isHoveringForm = false;
+
+    // Restart the timer only if the form is still open and wasn't manually opened
+    if (document.getElementById('applyForm').classList.contains('show') && !manualOpen) {
+        formTimer = setTimeout(() => {
+            toggleForm(true);
+        }, 10000);
+    }
+});
+
+// Auto-open form on page load for 5 seconds
 window.addEventListener('load', () => {
     setTimeout(() => {
         toggleForm();
@@ -1437,238 +1632,55 @@ document.querySelector('.apply-btn').addEventListener('click', () => {
 
 
 
+// animated name
+document.addEventListener("DOMContentLoaded", function () {
+    // Function to split text into characters while maintaining spacing
+    const splitText = (selector) => {
+      let element = document.querySelector(selector);
+      let text = element.innerText;
+      element.innerHTML = "";
+      text.split("").forEach((char) => {
+        let span = document.createElement("span");
+        span.textContent = char.trim() === "" ? "\u00A0" : char; // Preserve spaces
+        element.appendChild(span);
+      });
+    };
+
+    splitText(".left-part");
+    splitText(".right-part");
+
+    gsap.set(".left-part span", { y: 50, opacity: 0 });
+    gsap.set(".right-part span", { y: 50, opacity: 0 });
+
+    const animateText = () => {
+      gsap.to(".left-part span", {
+        y: 0,
+        opacity: 1,
+        duration: 0.6,
+        stagger: 0.05,
+        ease: "power2.out",
+        yoyo: true,
+        repeat: -1, // Infinite loop
+      });
+
+      gsap.to(".right-part span", {
+        y: 0,
+        opacity: 1,
+        duration: 0.6,
+        stagger: 0.05,
+        ease: "power2.out",
+        delay: 0.3,
+        yoyo: true,
+        repeat: -1, // Infinite loop
+      });
+    };
+
+    animateText();
+  });
         </script>
       </div>
-    </div>
   </body>
 </html>
 
 
-
-
-
-        <!-- <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/Bekaboo.jpg" class="poster-img-top" alt="Movie 7">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/Bombers.jpg" class="poster-img-top" alt="Movie 8">
-          </div>
-        </div> -->
-        <!-- <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/Call My Agent.jpg" class="poster-img-top" alt="Movie 9">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/Criminal Justice.jpg" class="poster-img-top" alt="Movie 10">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/Dharavi Bank.jpg" class="poster-img-top" alt="Movie 11">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/Dil Logical.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/Ek Farzi Love Story.jpeg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/half love half Arranged.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/Fitrat.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/Hostages.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/Hunter Tootega Bahi Todega.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/Fitrat.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/Industry.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/Namacool.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/Operation Parindey.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/Power of Paanch.png" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/Sajni Shinde Ka Viral.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/Shukranu.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/Sindoor Kimat.jpeg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/The Trial.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/Undekhi.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/web-series/XXX Uncensored.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div> -->
-
-   <!-- <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/movies/Sonic.jpg" class="poster-img-top" alt="Movie 7">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/movies/Tanaji.jpg" class="poster-img-top" alt="Movie 9">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/movies/Tejas.jpg" class="poster-img-top" alt="Movie 10">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/movies/The new Avangers.jpg" class="poster-img-top" alt="Movie 11">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/movies/Zara Hatke Zara Bachke.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/movies/Zombivli.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div> -->
-
-
-
-          <!-- <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/Happy Ever After.jpg" class="poster-img-top" alt="Movie 7">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/Imali 2.jpg" class="poster-img-top" alt="Movie 9">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/imli.jpg" class="poster-img-top" alt="Movie 10">
-          </div>
-        </div> -->
-        <!-- <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/jadu teri nazar.png" class="poster-img-top" alt="Movie 11">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/Janani.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/Maharaj Ki Jai Ho.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div> -->
-        <!-- <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/Nag Panchami.jpeg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/Namah.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/Nazar.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/Parchhayee.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/Pishachini.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/Shrikant Bashir.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/Sindoor Kimat.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/Tenali Rama.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/Vidrohi.jpeg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="poster">
-            <img src="assets/serials/ya jadu hai jinn ka.jpg" class="poster-img-top" alt="Movie 12">
-          </div>
-        </div> -->
 

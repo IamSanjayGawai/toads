@@ -1,6 +1,7 @@
 /* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&display=swap');
 
 
 /* Root variables */
@@ -52,15 +53,10 @@ body {
     align-items: center;
     justify-content: center;
     color: var(--white); /* Changed to white for better contrast on black */
-    cursor: none; /* Hide default cursor */
+    /* cursor: none;  */
+}
 
-}
-/* wrapper */
-.wrapper {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 /* wrapper end */
 .body-background{
   background-color: #000000; /* Explicit background color */
@@ -69,9 +65,26 @@ body {
 
 /* Typography */
 .heading-1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     text-transform: uppercase;
     letter-spacing: 5px;
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    
+}
+@media screen and (max-width: 768px) {
+    .heading-1 {
+        font-size: 2.5rem;
+    }
+    
+}
+@media screen and (max-width: 520px) {
+    .heading-1 {
+        font-size: 2rem;
+    }
+    
 }
 
 .heading-2 {
@@ -282,11 +295,10 @@ p {
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 
 }
-
 
 /* Apply Button */
 .custom-button {
@@ -325,7 +337,7 @@ p {
 /* Show Form */
 .form-container.show {
     right: 10px; /* Slide in */
-    top: 10%;
+    top: 15%;
 }
 
 /* Close Button */
@@ -357,7 +369,7 @@ p {
 .scooter-container {
     position: absolute;
     left: -400px; /* Initially hidden */
-    top: 20%;
+    top: 25%;
     transition: left 0.4s ease-in-out;
     z-index: 10000;
 }
@@ -440,6 +452,57 @@ p {
     max-height: 450px;
     transition: transform 0.5s ease;
 
+    
+}
+
+
+/* student work banners */
+
+
+/* student-work card styling */
+.student-work {
+    background-color: #000000;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    position: relative;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #FFFFFF;
+    
+
+}
+
+
+
+.student-work::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to top, rgba(88, 88, 88, 0.5), transparent);
+    opacity: 0;
+    transition: height 0.3s ease, opacity 0.3s ease;
+    
+}
+
+
+.student-work::after {
+    height: 15%;
+    opacity: 1;
+}
+
+.student-work-img-top {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    max-height: 450px;
+    transition: transform 0.5s ease;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -497,7 +560,6 @@ p {
 
 /* Our features */
 .our-features {
-    border-radius: 20px;
     padding: 50px;
     background-image: linear-gradient(45deg, #181818, #1d1d1d);
 
@@ -779,7 +841,7 @@ p {
 }
 
 .award-image img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
@@ -806,7 +868,7 @@ p {
 
 /* Awards Grid */
 .awards-list-img img {
-  width: 350px;
+  width: 280px;
   height: auto;
   border-radius: 5px;
   transition: transform 0.3s ease-in-out;
@@ -843,15 +905,15 @@ p {
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
 .benefit-card {
     background: rgb(57, 57, 57);
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    padding: 30px;
+    padding: 20px;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -859,7 +921,6 @@ p {
 }
 
 .benefit-card:hover {
-    transform: translateY(-10px);
     box-shadow: 0 15px 35px rgba(0,0,0,0.1);
 }
 
@@ -937,35 +998,43 @@ p {
 
 .placement_partners {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
-    
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 10px; /* Adjust spacing between images */
+    justify-content: center; /* Center align the grid */
+    align-items: center; /* Align items vertically */
+    max-width: 900px; 
+    margin: 0 auto; /* Center the grid */
+    padding: 20px; /* Add some padding */
+}
+
+.placement_partners img {
+    width: 250px;
+    height: 150px;
+    object-fit: contain;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 
-.placement_partners  img{
-    width: 200px;
-    height: 120px;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-    background: #9a9a9a;
-    padding: 20px;
 
-}
 
 @media screen and (max-width: 768px) {
     .placement_partners {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
     .placement_partners img {
-        width: 100%;
-        height: 200px;
-        border-radius: 10px;
-        transition: transform 0.3s ease-in-out;
-        background: #1a1a1a;
-        padding: 20px;
+        width: 150px;
+        height: 100px;
+        object-fit: contain;
+        padding: 10px;
+        background: #fff;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
+
     }
     
 }
@@ -977,12 +1046,13 @@ p {
         gap: 10px;
     }
     .placement_partners img {
-        width: 100%;
-        height: 120px;
-        border-radius: 10px;
-        transition: transform 0.3s ease-in-out;
-        background: #1a1a1a;
-        padding: 20px;
+        width: 150px;
+        height: 100px;
+        object-fit: contain;
+        padding: 10px;
+        background: #fff;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
     }
     
 }
@@ -1021,10 +1091,13 @@ p {
   }
 .clients-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Adjust grid layout */
-    gap: 20px;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: repeat(4, 1fr); /* 3 images per row */
+    gap: 20px; /* Adjust spacing between images */
+    justify-content: center; /* Center align the grid */
+    align-items: center; /* Align items vertically */
+    max-width: 900px; 
+    margin: 0 auto; /* Center the grid */
+    padding: 20px; 
 }
 
   /* Client Logos Grid */
@@ -1032,15 +1105,14 @@ p {
   
   /* Client Logos */
   .client-logo {
-    width: 180px; /* Ensures all logos have the same width */
-    height: 180px; /* Set a fixed height for consistency */
-    object-fit: contain; /* Keeps the aspect ratio intact */
-    padding: 10px;
-    background: #ffffff; /* White background for a clean look */
-    border-radius: 8px; /* Smooth edges */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Professional look */
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 0.9;
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
 
 
   }
@@ -1175,18 +1247,18 @@ p {
 
 .partner-logos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Adjust grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Adjust grid layout */
     gap: 20px;
     justify-items: center;
     align-items: center;
     width: 50%;
 }
 .partner-logos img {
-    width: 200px;
+    width: 150px;
     height: 150px;
     object-fit: contain;
     border: 1px solid #ddd;
-    padding: 5px;
+    padding: 12px;
     background: #fff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
@@ -1209,7 +1281,7 @@ p {
 @media screen and (max-width: 768px) {
     .partner-logos {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         justify-items: center;
         align-items: center;
         width: 100%;
@@ -1357,7 +1429,7 @@ flex-direction: column;
 .map-section {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1409,13 +1481,13 @@ flex-direction: column;
 
 
 .frog-cursor {
-    width: 40px; /* Adjust size */
+    width: 40px; 
     height: 40px;
-    position: fixed; /* Stay in place across the screen */
+    position: fixed; 
     top: 0;
     left: 0;
-    pointer-events: none; /* Prevents interaction issues */
-    z-index: 9999; /* Ensures it's always on top */
+    pointer-events: none; 
+    z-index: 9999;
     transform: translate(-50%, -50%);
   }
 

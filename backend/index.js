@@ -25,36 +25,42 @@ app.post("/send-email", async (req, res) => {
   const mailOptions = {
     from: email,
     to: process.env.EMAIL_USER,
-    subject: "New Course Enquiry",
+    subject: "📌 New Course Enquiry",
     html: `
-      <div style="max-width: 600px; margin: auto; font-family: Arial, sans-serif; border: 1px solid #ddd; border-radius: 10px; padding: 20px; background: #f9f9f9;">
-        <h2 style="color: #333; text-align: center;">📩 New Course Enquiry from ${firstName} ${lastName}</h2>
+      <div style="max-width: 600px; margin: auto; font-family: Arial, sans-serif; border: 1px solid #ddd; border-radius: 10px; padding: 20px; background: #ffffff;">
+        <h2 style="color: #333; text-align: center;">📩 New Course Enquiry</h2>
         
-        <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+        <p style="font-size: 16px; color: #555; text-align: center;">
+          A new course enquiry has been received. Below are the details:
+        </p>
+  
+        <table style="width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 14px;">
           <tr>
-            <td style="padding: 10px; background: #f1f1f1; font-weight: bold;">First Name</td>
-            <td style="padding: 10px; background: #fff;">${firstName}</td>
+            <td style="padding: 12px; background: #f8f8f8; font-weight: bold; border-bottom: 1px solid #ddd;">Full Name</td>
+            <td style="padding: 12px; background: #fff; border-bottom: 1px solid #ddd;">${firstName} ${lastName}</td>
           </tr>
           <tr>
-            <td style="padding: 10px; background: #f1f1f1; font-weight: bold;">Last Name</td>
-            <td style="padding: 10px; background: #fff;">${lastName}</td>
+            <td style="padding: 12px; background: #f8f8f8; font-weight: bold; border-bottom: 1px solid #ddd;">Email</td>
+            <td style="padding: 12px; background: #fff; border-bottom: 1px solid #ddd;">
+              <a href="mailto:${email}" style="color: #007bff; text-decoration: none;">${email}</a>
+            </td>
           </tr>
           <tr>
-            <td style="padding: 10px; background: #f1f1f1; font-weight: bold;">Email</td>
-            <td style="padding: 10px; background: #fff;"><a href="mailto:${email}" style="color: #007bff; text-decoration: none;">${email}</a></td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; background: #f1f1f1; font-weight: bold;">Mobile Number</td>
-            <td style="padding: 10px; background: #fff;">${phone}</td>
+            <td style="padding: 12px; background: #f8f8f8; font-weight: bold; border-bottom: 1px solid #ddd;">Mobile Number</td>
+            <td style="padding: 12px; background: #fff; border-bottom: 1px solid #ddd;">${phone}</td>
           </tr>
         </table>
   
         <p style="text-align: center; margin-top: 20px; font-size: 14px; color: #666;">
-          📌 Submitted on: <strong>${new Date().toLocaleString()}</strong>
+          📅 Submitted on: <strong>${new Date().toLocaleString()}</strong>
         </p>
   
-        <p style="text-align: center; margin-top: 10px;">
-          <a href="mailto:${email}" style="background: #007bff; color: #fff; padding: 10px 15px; border-radius: 5px; text-decoration: none; font-weight: bold;">Reply to Sender</a>
+        <p style="text-align: center; margin-top: 20px;">
+          <a href="mailto:${email}" style="background: #007bff; color: #fff; padding: 12px 18px; border-radius: 5px; text-decoration: none; font-weight: bold;">Reply to Enquirer</a>
+        </p>
+  
+        <p style="text-align: center; margin-top: 10px; font-size: 12px; color: #999;">
+          This is an automated notification. Please respond at your earliest convenience.
         </p>
       </div>
     `,
